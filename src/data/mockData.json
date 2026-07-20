@@ -1,0 +1,423 @@
+{
+  "companyInfo": {
+    "name": "VỆ SINH 247 - ÁNH NGỌC VINHOMES",
+    "slogan": "Có Ánh Ngọc - Nhà sạch bong",
+    "hotline1": "0911976839",
+    "hotline2": "0938129969",
+    "email": "vesinh247.anhngoc@gmail.com",
+    "addresses": [
+      {
+        "branch": "Văn phòng chính",
+        "address": "The Landmark, Vinhomes Central Park, Bình Thạnh, TP.HCM"
+      },
+      {
+        "branch": "Cơ sở Vinhomes Ocean Park",
+        "address": "Tòa S2.12, Khu đô thị Vinhomes Ocean Park, Gia Lâm, Hà Nội"
+      },
+      {
+        "branch": "Cơ sở Vinhomes Smart City",
+        "address": "Tòa S1.06, Khu đô thị Vinhomes Smart City, Tây Mỗ, Nam Từ Liêm, Hà Nội"
+      }
+    ],
+    "workingHours": "07:00 - 22:00 (Hàng ngày, kể cả Thứ Bảy, Chủ Nhật và ngày Lễ)"
+  },
+  "services": [
+    {
+      "id": "don-dep-theo-gio-thang",
+      "slug": "don-dep-theo-gio-thang",
+      "category": "TIỆN LỢI",
+      "title": "Vệ sinh căn hộ định kỳ",
+      "shortDescription": "Dịch vụ duy trì không gian sống sạch sẽ hàng tuần, hàng tháng giúp bạn tiết kiệm thời gian và công sức.",
+      "iconName": "Home",
+      "bannerImage": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Dịch vụ vệ sinh căn hộ định kỳ giúp duy trì không gian sống trong sạch và sạch sẽ theo tuần hoặc theo tháng. Đây là giải pháp hoàn hảo cho những khách hàng bận rộn tại các khu đô thị cao cấp như Vinhomes. Nhân viên chuyên nghiệp của chúng tôi sẽ phụ trách lau dọn nhà cửa, sắp xếp đồ đạc, làm sạch nhà tắm, nhà bếp và giặt quần áo nếu có yêu cầu.",
+      "pricing": {
+        "basePrice": "60.000 VNĐ",
+        "unit": "giờ",
+        "details": "Lịch hẹn linh hoạt từ 3 giờ trở lên. Đăng ký dọn tháng định kỳ để nhận thêm ưu đãi."
+      },
+      "pricingList": [
+        { "name": "Dọn dẹp theo giờ (dưới 4h)", "price": "70.000đ/giờ" },
+        { "name": "Dọn dẹp theo giờ (trên 4h)", "price": "60.000đ/giờ" },
+        { "name": "Gói dọn định kỳ (3 buổi/tuần)", "price": "1.800.000đ/tháng" },
+        { "name": "Gói dọn định kỳ (5 buổi/tuần)", "price": "2.800.000đ/tháng" }
+      ],
+      "benefits": [
+        "Tiết kiệm 80% thời gian dọn dẹp hàng tuần của bạn.",
+        "Nhân sự trung thực, có lý lịch tư pháp rõ ràng và kỹ năng dọn dẹp bài bản.",
+        "Dịch vụ chuyên nghiệp chuẩn mực, cam kết bồi hoàn nếu xảy ra hư hỏng.",
+        "Sắp xếp nhà cửa ngăn nắp và sạch bóng từ cửa vào trong."
+      ],
+      "process": [
+        { "title": "Tiếp nhận & Bố trí lịch", "description": "Ghi nhận nhu cầu của khách hàng về thời gian, địa điểm và sắp xếp nhân viên phù hợp." },
+        { "title": "Chuẩn bị công cụ lau dọn", "description": "Nhân viên di chuyển tới căn hộ trang bị chổi, khăn sạch và các dung dịch lau sàn sinh học." },
+        { "title": "Lau dọn phòng khách & ngủ", "description": "Hút bụi, lau dọn bàn ghế, quét dọn và sắp xếp lại các vật dụng cá nhân ngăn nắp." },
+        { "title": "Vệ sinh bếp & Toilet", "description": "Cọ rửa bồn cầu, lau chùi vòi sen, bồn rửa bát và lau bề mặt bếp nấu dầu mỡ." },
+        { "title": "Lau sàn & Bàn giao", "description": "Lau sạch sàn nhà bằng nước lau sinh học thơm mát, kiểm tra tổng thể cùng chủ nhà." }
+      ],
+      "faqs": [
+        {
+          "question": "Tôi có thể cố định một bạn nhân viên làm định kỳ không?",
+          "answer": "Có. Với các gói dọn tháng định kỳ, chúng tôi sẽ sắp xếp cố định nhân sự quen thuộc để căn hộ của bạn được dọn dẹp đúng ý nhất."
+        },
+        {
+          "question": "Hóa chất lau nhà có ảnh hưởng tới em bé không?",
+          "answer": "Không. Toàn bộ nước lau sàn chúng tôi sử dụng đều đạt chứng nhận sinh học, không để lại dư lượng độc hại, an toàn với cả trẻ nhỏ và vật nuôi."
+        }
+      ]
+    },
+    {
+      "id": "don-dep-chuyen-sau",
+      "slug": "don-dep-chuyen-sau",
+      "category": "TỈ MỈ",
+      "title": "Dọn dẹp chuyên sâu",
+      "shortDescription": "Làm sạch từng ngóc ngách, khe kẽ, cửa kính và thiết bị điện tử với sự tập trung tối đa.",
+      "iconName": "Wrench",
+      "bannerImage": "https://images.unsplash.com/photo-1528740561666-bd247e66ad50?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Gói tổng vệ sinh chuyên sâu (Deep Cleaning) tập trung xử lý sạch sâu mọi vết bẩn tích tụ lâu ngày, các vết bẩn cứng đầu sau khi sửa chữa nhà cửa, căn hộ mới bàn giao từ chủ đầu tư. Chúng tôi huy động đội ngũ nhân lực đông đảo kết hợp máy chà sàn công nghiệp, máy hút bụi khô ướt công suất lớn để làm sạch toàn bộ bề mặt tường, trần, kính ban công tầm cao và tẩy cặn canxi nhà tắm.",
+      "pricing": {
+        "basePrice": "18.000 VNĐ",
+        "unit": "m²",
+        "details": "Giá trọn gói từ 1.200.000 VNĐ cho căn hộ 2 phòng ngủ. Khảo sát trực tiếp trước khi báo giá."
+      },
+      "pricingList": [
+        { "name": "Căn hộ dưới 60m²", "price": "1.200.000đ - 1.500.000đ" },
+        { "name": "Căn hộ 60m² - 90m²", "price": "1.500.000đ - 2.000.000đ" },
+        { "name": "Căn hộ trên 90m²", "price": "2.000.000đ - 2.800.000đ" },
+        { "name": "Biệt thự, Nhà phố", "price": "25.000đ - 35.000đ/m²" }
+      ],
+      "benefits": [
+        "Làm sạch sâu từ trong ra ngoài, từ trên xuống dưới một cách triệt để.",
+        "Tẩy sạch 100% cặn canxi trên vách kính tắm và các vết ố sơn tường.",
+        "Sử dụng máy phun hơi nước nóng diệt khuẩn nhiệt độ cao.",
+        "Khử mùi và lọc sạch bụi mịn trong không khí bằng máy tạo khí Ozone."
+      ],
+      "process": [
+        { "title": "Khảo sát & Lên lịch chi tiết", "description": "Kiểm tra mức độ bẩn sạch, số lượng vách kính tắm cần xử lý cặn canxi để lên lịch hẹn." },
+        { "title": "Chuẩn bị thiết bị chuyên sâu", "description": "Chuẩn bị máy phun hút sofa, máy hơi nước nóng, hóa chất tẩy cặn canxi vách kính chuyên dụng." },
+        { "title": "Vệ sinh kẽ hở & gầm tủ", "description": "Làm sạch sâu phía sau tủ lạnh, dưới gầm giường, các khe cửa sổ tích tụ bụi lâu năm." },
+        { "title": "Tẩy rửa nhà tắm & bếp", "description": "Cọ rửa vách kính tắm bằng hóa chất tẩy cặn canxi, tẩy dầu mỡ bám dính sâu trong tủ bếp." },
+        { "title": "Khử khuẩn Ozone & Bàn giao", "description": "Phun hơi nước nóng khử khuẩn sofa/nệm, chạy máy Ozone khử mùi không khí rồi bàn giao." }
+      ],
+      "faqs": [
+        {
+          "question": "Nên dọn dẹp chuyên sâu bao lâu một lần?",
+          "answer": "Để duy trì sức khỏe hô hấp tốt nhất, các chuyên gia khuyên nên tiến hành dọn dẹp chuyên sâu định kỳ từ 3 đến 6 tháng một lần."
+        },
+        {
+          "question": "Tẩy cặn canxi vách kính tắm có sạch hoàn toàn không?",
+          "answer": "Sạch hoàn toàn. Chúng tôi sử dụng chất tẩy cặn chuyên dụng của Đức đánh tan các vết ố canxi kết tủa lâu năm, khôi phục vách kính trong suốt như mới."
+        }
+      ]
+    },
+    {
+      "id": "giat-tham-sofa",
+      "slug": "giat-tham-sofa",
+      "category": "LÀM SẠCH SÂU",
+      "title": "Giặt thảm, ghế sofa",
+      "shortDescription": "Công nghệ phun hút nước nóng giúp đánh tan mọi vết bẩn cứng đầu trên các bề mặt vải, nỉ.",
+      "iconName": "Sparkles",
+      "bannerImage": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Dịch vụ giặt sofa, nệm và thảm trải sàn bằng công nghệ hút bụi mịn chuyên sâu kết hợp phun hơi nước nóng nhiệt độ cao (100°C+). Phương pháp này giúp loại bỏ hoàn toàn mạt bụi, tế bào da chết, mồ hôi ẩn sâu bên trong các sợi vải, da và loại bỏ 99% vi khuẩn, virus truyền nhiễm gây dị ứng.",
+      "pricing": {
+        "basePrice": "250.000 VNĐ",
+        "unit": "bộ hoặc tấm thảm",
+        "details": "Đơn giá trọn gói bao gồm sấy khô bằng máy thổi công suất lớn."
+      },
+      "pricingList": [
+        { "name": "Giặt ghế sofa nỉ/da", "price": "250.000đ - 450.000đ/bộ" },
+        { "name": "Giặt đệm lò xo/bông ép", "price": "250.000đ - 350.000đ/tấm" },
+        { "name": "Giặt thảm trang trí", "price": "150.000đ - 250.000đ/tấm" },
+        { "name": "Giặt thảm văn phòng", "price": "15.000đ - 25.000đ/m²" }
+      ],
+      "benefits": [
+        "Công nghệ giặt hơi nước nóng diệt khuẩn sâu 99%.",
+        "Khử mùi ẩm mốc, lưu hương thảo mộc tự nhiên dịu nhẹ.",
+        "Làm sạch sâu mà không ảnh hưởng đến độ bền màu hay chất liệu của sợi vải, da.",
+        "Hỗ trợ sấy khô nhanh chóng, có thể sử dụng lại sofa sau 2 giờ."
+      ],
+      "process": [
+        { "title": "Hút bụi thô bề mặt", "description": "Sử dụng máy hút chuyên dụng hút sạch bụi bẩn thô, tóc và lông thú cưng bám bên ngoài." },
+        { "title": "Xịt dung dịch làm sạch sinh học", "description": "Phun dung dịch tách vết bẩn sinh học của Singapore lên bề mặt vải sofa/đệm." },
+        { "title": "Mài chà vết bẩn cứng đầu", "description": "Dùng bàn chải mềm xoay cầm tay chà kỹ các vết ố trà, café hay vết mực." },
+        { "title": "Phun hút nước hơi nóng", "description": "Phun hơi nước nóng diệt khuẩn rồi hút cạn chất bẩn cùng nước ẩm bằng máy phun hút." },
+        { "title": "Thổi khô & Phủ kem dưỡng", "description": "Đặt quạt thổi khô công nghiệp công suất cao, quét kem dưỡng bảo vệ đối với sofa da." }
+      ],
+      "faqs": [
+        {
+          "question": "Giặt sofa xong thì bao lâu sử dụng lại được?",
+          "answer": "Nhờ máy thổi khô chuyên dụng, sofa vải nỉ thường khô hoàn toàn sau 2 giờ. Sofa da có thể lau khô và sử dụng ngay lập tức."
+        },
+        {
+          "question": "Giặt đệm có hút sạch được mạt bụi bên trong không?",
+          "answer": "Có. Công nghệ phun hút ion hơi nước nóng của chúng tôi thâm nhập sâu vào lõi đệm để kéo toàn bộ vi khuẩn và mạt bụi ra ngoài."
+        }
+      ]
+    },
+    {
+      "id": "diet-con-trung",
+      "slug": "diet-con-trung",
+      "category": "KIỂM SOÁT",
+      "title": "Diệt côn trùng (gián/muỗi)",
+      "shortDescription": "Giải pháp phun thuốc khử trùng, diệt trừ côn trùng gây hại với hóa chất an toàn cho sức khỏe.",
+      "iconName": "Bug",
+      "bannerImage": "https://images.unsplash.com/photo-1590682680394-b3291eb0c02c?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Côn trùng gây hại như muỗi, gián, kiến, mối không chỉ gây phiền toái mà còn là tác nhân truyền nhiều bệnh nguy hiểm (sốt xuất huyết, tiêu chảy, dịch hạch...). Dịch vụ diệt côn trùng của Ánh Ngọc Vinhomes sử dụng công nghệ phun sương, phun mù nóng hiện đại và các loại thuốc sinh học nhập khẩu chính hãng (được Bộ Y tế cấp phép) giúp tiêu diệt tận gốc côn trùng gây hại tại nhà ở, văn phòng, nhà hàng mà không gây độc hại cho con người.",
+      "pricing": {
+        "basePrice": "5.000 VNĐ",
+        "unit": "m²",
+        "details": "Giá dao động dựa vào diện tích phun và gói thuốc khách hàng lựa chọn."
+      },
+      "pricingList": [
+        { "name": "Phun thuốc diệt muỗi (<100m²)", "price": "400.000đ/căn" },
+        { "name": "Phun thuốc diệt muỗi (>100m²)", "price": "4.000đ - 6.000đ/m²" },
+        { "name": "Diệt gián Đức chuyên sâu", "price": "350.000đ - 500.000đ/lần" },
+        { "name": "Diệt mối tận gốc trọn gói", "price": "1.500.000đ - 2.500.000đ" }
+      ],
+      "benefits": [
+        "Tiêu diệt tận gốc và ngăn ngừa côn trùng quay trở lại hiệu quả dài lâu.",
+        "Sử dụng thuốc phun sinh học nhập khẩu từ Đức, Anh an toàn, không mùi hôi.",
+        "Đội ngũ kỹ thuật viên chuyên nghiệp, am hiểu tập tính sinh học của từng loại côn trùng.",
+        "Chính sách bảo hành uy tín từ 3 đến 6 tháng."
+      ],
+      "process": [
+        { "title": "Che phủ nội thất bảo vệ", "description": "Dùng các tấm bạt nilon bọc kín giường chiếu, thực phẩm, đồ ăn trước khi phun thuốc." },
+        { "title": "Pha thuốc chuẩn tỷ lệ", "description": "Kỹ thuật viên đo lường pha chế thuốc sinh học của Anh/Đức đúng tỷ lệ quy chuẩn Bộ Y tế." },
+        { "title": "Phun tồn lưu vách tường", "description": "Sử dụng máy phun áp lực phun tồn lưu dung dịch lên tường, hốc tối ngăn chặn bò bò." },
+        { "title": "Phun không gian mù nóng", "description": "Phun sương siêu mịn bay lơ lửng trong không khí tiêu diệt muỗi, ruồi trưởng thành." },
+        { "title": "Kiểm tra chất lượng & Dọn dẹp", "description": "Đo đạc kiểm tra nồng độ, tháo dỡ nilon bọc phủ và hướng dẫn chủ nhà lau dọn." }
+      ],
+      "faqs": [
+        {
+          "question": "Phun thuốc muỗi xong bao lâu thì vào nhà được?",
+          "answer": "Đối với người lớn là sau 1.5 - 2 giờ. Đối với trẻ nhỏ, người có cơ địa nhạy cảm hoặc phụ nữ mang thai nên vào nhà sau 3 - 4 giờ."
+        },
+        {
+          "question": "Thuốc phun muỗi có làm hỏng đồ gỗ hay rỉ sét kim loại?",
+          "answer": "Không. Hóa chất sinh học cao cấp dạng phun sương siêu mịn không để lại vết ố trên gỗ và không gây rỉ sét inox/kim loại."
+        }
+      ]
+    },
+    {
+      "id": "ve-sinh-cong-nghiep",
+      "slug": "ve-sinh-cong-nghiep",
+      "category": "QUY MÔ LỚN",
+      "title": "Vệ sinh công nghiệp",
+      "shortDescription": "Tổng vệ sinh sau xây dựng, vệ sinh nhà xưởng, văn phòng với thiết bị chuyên dụng hiện đại.",
+      "iconName": "Building2",
+      "bannerImage": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Dịch vụ Vệ sinh công nghiệp của Ánh Ngọc Vinhomes mang đến giải pháp làm sạch toàn diện cho các công trình lớn nhỏ như nhà xưởng, văn phòng, tòa nhà, biệt thự, và căn hộ sau xây dựng hoặc sửa chữa. Chúng tôi sử dụng các trang thiết bị máy móc hiện đại (máy chà sàn công nghiệp, máy hút bụi công suất lớn, máy phun rửa áp lực cao) cùng đội ngũ nhân công lành nghề để đánh bay mọi vết bẩn cứng đầu nhất, mang lại không gian sạch sẽ, trong lành tuyệt đối.",
+      "pricing": {
+        "basePrice": "15.000 VNĐ",
+        "unit": "m²",
+        "details": "Đơn giá thực tế có thể thay đổi tùy thuộc vào mức độ bẩn/sạch của công trình và diện tích cụ thể. Khảo sát miễn phí."
+      },
+      "pricingList": [
+        { "name": "Vệ sinh sau xây dựng", "price": "15.000đ - 25.000đ/m²" },
+        { "name": "Vệ sinh định kỳ văn phòng", "price": "8.005đ - 12.000đ/m²" },
+        { "name": "Đánh bóng sàn đá", "price": "80.000đ - 150.000đ/m²" },
+        { "name": "Giặt thảm công nghiệp", "price": "7.000đ - 10.000đ/m²" }
+      ],
+      "benefits": [
+        "Tiết kiệm tối đa thời gian và công sức cho chủ đầu tư/chủ nhà.",
+        "Sử dụng máy móc công nghiệp hiện đại, hiệu suất làm sạch gấp 10 lần thủ công.",
+        "Hóa chất tẩy rửa thân thiện với môi trường, đạt chuẩn an toàn sức khỏe.",
+        "Quy trình chuyên nghiệp, nhanh gọn, bàn giao đúng tiến độ cam kết."
+      ],
+      "process": [
+        { "title": "Khảo sát & Lập phương án", "description": "Đội ngũ kỹ thuật đến tận nơi đánh giá diện tích, mức độ bẩn và yêu cầu đặc thù để đưa ra phương án tối ưu nhất." },
+        { "title": "Chuẩn bị máy móc & Hóa chất", "description": "Sử dụng máy chà sàn công nghiệp, máy hút bụi công suất lớn và hóa chất sinh học đạt chuẩn quốc tế, an toàn tuyệt đối." },
+        { "title": "Vệ sinh phần thô & Tinh", "description": "Loại bỏ rác thải thô, sau đó tiến hành làm sạch sâu các bề mặt kính, sàn, trần và các khu vực kỹ thuật khó tiếp cận." },
+        { "title": "Khử khuẩn & Kiểm tra chất lượng", "description": "Phun khử khuẩn toàn bộ không gian. Giám sát viên tiến hành nghiệm thu từng hạng mục theo checklist tiêu chuẩn 5 sao." },
+        { "title": "Bàn giao & Bảo hành", "description": "Khách hàng kiểm tra và ký biên bản bàn giao. Chúng tôi cam kết bảo hành dịch vụ và hỗ trợ phát sinh trong 24h." }
+      ],
+      "faqs": [
+        {
+          "question": "Thời gian thi công mất bao lâu?",
+          "answer": "Tùy thuộc vào quy mô công trình. Một căn hộ chung cư thông thường hoàn thành trong 1 ngày (8-10 tiếng), các tòa nhà hay nhà xưởng lớn cần từ 2-5 ngày làm việc liên tục."
+        },
+        {
+          "question": "Công ty có bảo hành dịch vụ không?",
+          "answer": "Có. Ánh Ngọc cam kết bảo hành trong vòng 24 giờ. Nếu quý khách phát hiện bất kỳ ngóc ngách nào chưa được làm sạch kỹ, nhân viên sẽ đến xử lý lại ngay lập tức."
+        },
+        {
+          "question": "Hóa chất sử dụng có an toàn cho trẻ nhỏ?",
+          "answer": "Hoàn toàn an toàn. Chúng tôi chỉ sử dụng các loại hóa chất tẩy rửa nhập khẩu chính hãng sinh học, có đầy đủ giấy kiểm định và chứng nhận an toàn với sức khỏe con người."
+        }
+      ]
+    },
+    {
+      "id": "ve-sinh-nha-hang",
+      "slug": "ve-sinh-nha-hang",
+      "category": "F&B SPECIALIST",
+      "title": "Vệ sinh nhà hàng / Quán ăn",
+      "shortDescription": "Dịch vụ chuyên biệt cho bếp ăn công nghiệp, đảm bảo các tiêu chuẩn khắt khe về an toàn thực phẩm.",
+      "iconName": "Utensils",
+      "bannerImage": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Vệ sinh an toàn thực phẩm là yếu tố sống còn của mọi nhà hàng, quán ăn. Tuy nhiên, khu bếp nấu nướng luôn phải đối mặt với tình trạng bám dầu mỡ nghiêm trọng trên tường, máy hút mùi, sàn nhà trơn trượt. Dịch vụ vệ sinh nhà hàng của Ánh Ngọc Vinhomes giúp làm sạch triệt để dầu mỡ đóng tảng, vệ sinh khu vực ăn uống của khách, khử trùng nhà vệ sinh và khử mùi toàn bộ không gian, giúp nhà hàng luôn đạt chuẩn vệ sinh dịch tễ cao nhất.",
+      "pricing": {
+        "basePrice": "1.500.000 VNĐ",
+        "unit": "lần tổng vệ sinh",
+        "details": "Báo giá chính xác sau khi khảo sát thực tế quy mô bếp và diện tích quán ăn."
+      },
+      "pricingList": [
+        { "name": "Tẩy mỡ bếp công nghiệp", "price": "1.500.000đ - 3.000.000đ" },
+        { "name": "Lau chùi hệ thống hút khói", "price": "800.000đ - 1.500.000đ" },
+        { "name": "Tổng vệ sinh sảnh ăn uống", "price": "15.000đ - 25.000đ/m²" },
+        { "name": "Khử trùng nhà hàng trọn gói", "price": "400.000đ - 800.000đ/lần" }
+      ],
+      "benefits": [
+        "Tẩy sạch dầu mỡ cứng đầu bám trên hệ thống hút mùi và bếp ga/bếp công nghiệp.",
+        "Sử dụng hóa chất tẩy dầu mỡ chuyên dụng an toàn cho ngành thực phẩm.",
+        "Thực hiện vào khung giờ trống (ban đêm hoặc sáng sớm) để không ảnh hưởng hoạt động kinh doanh.",
+        "Giúp nâng cao hình ảnh vệ sinh chuyên nghiệp của nhà hàng đối với khách hàng."
+      ],
+      "process": [
+        { "title": "Khảo sát hiện trạng bếp", "description": "Kiểm tra hệ thống hút mùi, các bếp xào nấu xem lượng dầu mỡ bám dính dày mỏng ra sao." },
+        { "title": "Bọc phủ bảo quản thiết bị", "description": "Bọc nilon che kín toàn bộ thực phẩm, tủ đông, gia vị tránh hóa chất bay vào." },
+        { "title": "Ngâm tẩy lưới lọc mỡ", "description": "Tháo dỡ các tấm phin lọc máy hút mùi ngâm vào bồn hóa chất chuyên dụng tách mỡ." },
+        { "title": "Cọ sàn đánh mỡ sàn bếp", "description": "Chà rửa sàn bếp bằng chất khử dầu mỡ chuyên biệt, cọ thành tường bếp sáng loáng." },
+        { "title": "Vệ sinh sảnh ăn uống", "description": "Lau chùi bàn ghế ăn của khách, lau cửa kính mặt tiền và phun khử trùng toilet." }
+      ],
+      "faqs": [
+        {
+          "question": "Công việc vệ sinh có làm gián đoạn bán hàng không?",
+          "answer": "Không. Chúng tôi bố trí làm việc vào ban đêm sau khi nhà hàng đóng cửa hoặc sáng sớm trước khi mở cửa đón khách."
+        },
+        {
+          "question": "Hóa chất tẩy dầu mỡ có để lại mùi khó chịu không?",
+          "answer": "Không. Sau khi cọ rửa sạch sẽ bằng vòi nước áp lực cao, chúng tôi xịt nước xả khử mùi thực phẩm an toàn sinh học."
+        }
+      ]
+    },
+    {
+      "id": "phu-bong-san",
+      "slug": "phu-bong-san",
+      "category": "BẢO DƯỠNG",
+      "title": "Phủ bóng sàn",
+      "shortDescription": "Phục hồi và bảo vệ các loại sàn đá, gỗ, nhựa với lớp phủ bền bỉ, sáng bóng như mới.",
+      "iconName": "Shield",
+      "bannerImage": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Sàn đá tự nhiên (Marble, Granite) hay sàn nhựa Vinyl sau thời gian sử dụng sẽ bị trầy xước, mất đi độ bóng và dễ thấm nước bẩn gây ố màu. Dịch vụ phủ bóng sàn của Ánh Ngọc Vinhomes sử dụng công nghệ mài sàn kim cương kết hợp hóa chất phủ bóng nhập khẩu cao cấp để phục hồi độ sáng bóng gương 95% như mới, đồng thời tạo lớp màng bảo vệ chống trầy xước, chống thấm nước cực tốt, giúp kéo dài tuổi thọ của mặt sàn.",
+      "pricing": {
+        "basePrice": "40.000 VNĐ",
+        "unit": "m²",
+        "details": "Mức giá tùy thuộc vào chất liệu sàn (đá Marble, Granite, bê tông hay Vinyl) và hiện trạng độ trầy xước."
+      },
+      "pricingList": [
+        { "name": "Mài & Phủ bóng sàn bê tông", "price": "30.000đ - 50.000đ/m²" },
+        { "name": "Phủ bóng sàn nhựa Vinyl", "price": "25.000đ - 40.000đ/m²" },
+        { "name": "Phục hồi độ bóng đá Granite", "price": "120.000đ - 180.000đ/m²" },
+        { "name": "Phục hồi độ bóng đá Marble", "price": "150.000đ - 220.000đ/m²" }
+      ],
+      "benefits": [
+        "Khôi phục độ sáng bóng loáng như gương, tăng sự sang trọng cho sảnh tòa nhà, biệt thự.",
+        "Tạo lớp màng bảo vệ ngăn ngừa bụi bẩn bám dính và ngấm nước.",
+        "Quy trình mài và phủ bóng chuẩn châu Âu, bền đẹp từ 2-3 năm.",
+        "Dễ dàng lau chùi vệ sinh hàng ngày sau khi đã phủ bóng."
+      ],
+      "process": [
+        { "title": "Vệ sinh hút bụi sàn", "description": "Lau dọn thô, quét dọn và dùng máy hút bụi hút sạch cát sỏi nhỏ tránh trầy xước sàn." },
+        { "title": "Mài sàn đầu số kim cương", "description": "Sử dụng máy mài sàn công nghiệp nặng mài mịn loại bỏ các vết trầy xước nhỏ." },
+        { "title": "Lau sạch bột đá và sấy khô", "description": "Lau hút toàn bộ bột đá mài phát sinh, dùng máy thổi làm khô ráo mặt sàn." },
+        { "title": "Phủ bóng hóa chất lỏng", "description": "Quét đều tay lớp dung dịch tạo bóng chuyên dụng nhập khẩu Mỹ (phủ từ 2-3 lớp)." },
+        { "title": "Đánh bóng tốc độ cao", "description": "Dùng máy đánh bóng tốc độ 1500 vòng/phút ép ép bề mặt bóng sáng gương hoàn chỉnh." }
+      ],
+      "faqs": [
+        {
+          "question": "Sàn phủ bóng giữ được độ bóng bao lâu?",
+          "answer": "Trung bình duy trì độ sáng bóng từ 2 - 3 năm tùy thuộc vào lưu lượng di chuyển và cách vệ sinh sàn hàng ngày bằng chổi lau mềm."
+        },
+        {
+          "question": "Thời gian hóa chất khô hoàn toàn là bao lâu?",
+          "answer": "Khoảng 4 tiếng sau khi đánh bóng xong là có thể đi lại nhẹ nhàng, sau 24 tiếng có thể sắp xếp đồ dùng nặng lên."
+        }
+      ]
+    },
+    {
+      "id": "xay-dung-thiet-ke-thi-cong",
+      "slug": "xay-dung-thiet-ke-thi-cong",
+      "category": "XÂY DỰNG",
+      "title": "Thi công & Sơn bả",
+      "shortDescription": "Thiết kế thi công trần panel, sơn bả vách ngăn, cải tạo không gian nội thất chuyên nghiệp.",
+      "iconName": "Layers",
+      "bannerImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      "fullDescription": "Bên cạnh mảng làm sạch, Ánh Ngọc Vinhomes còn sở hữu đội ngũ kỹ sư và thợ xây dựng lành nghề, chuyên đảm nhận các hạng mục thi công sửa chữa, sơn bả vách thạch cao, lắp ráp hệ thống trần panel cách âm cách nhiệt cho căn hộ chung cư, văn phòng làm việc và nhà xưởng. Chúng tôi mang đến giải pháp trọn gói từ tư vấn thiết kế, chuẩn bị vật liệu đạt chuẩn chất lượng cao, thi công tỉ mỉ cho đến khâu dọn dẹp vệ sinh sạch sẽ sau khi hoàn tất công trình để bàn giao nhà hoàn thiện ngay cho gia chủ.",
+      "pricing": {
+        "basePrice": "65.000 VNĐ",
+        "unit": "m²",
+        "details": "Báo giá chi tiết theo bản vẽ thiết kế hoặc khối lượng công việc đo đạc thực tế."
+      },
+      "pricingList": [
+        { "name": "Sơn bả vách thạch cao", "price": "65.000đ - 85.000đ/m²" },
+        { "name": "Thi công trần panel", "price": "150.000đ - 250.000đ/m²" },
+        { "name": "Cải tạo vách ngăn thạch cao", "price": "180.000đ - 280.000đ/m²" },
+        { "name": "Sơn nước hoàn thiện (chưa vật tư)", "price": "25.000đ - 35.000đ/m²" }
+      ],
+      "benefits": [
+        "Dịch vụ trọn gói từ thiết kế, thi công đến dọn dẹp vệ sinh bàn giao sạch sẽ.",
+        "Sử dụng vật liệu tấm panel, bột bả, sơn nước chính hãng chất lượng cao (Dulux, Jotun).",
+        "Đội thợ lành nghề, thi công chuyên nghiệp, đường nét sơn bả sắc sảo.",
+        "Cam kết đúng tiến độ, bảo hành công trình dài hạn."
+      ],
+      "process": [
+        { "title": "Khảo sát và tư vấn thiết kế", "description": "Đội ngũ kỹ sư đo đạc kích thước hiện trạng vách, trần và vẽ phác thảo phương án tối ưu." },
+        { "title": "Báo giá và Chuẩn bị vật tư", "description": "Thống nhất dự toán chi phí chi tiết, vận chuyển tấm panel, thạch cao, sơn nước chính hãng đến." },
+        { "title": "Bọc phủ che chắn nội thất", "description": "Dùng màng bọc nilon bảo vệ sàn nhà, tủ giường xung quanh tránh bụi thạch cao và sơn rơi." },
+        { "title": "Thi công lắp đặt & Sơn bả", "description": "Bắn khung xương, ốp tấm panel/thạch cao, bả matit 2 lớp mài phẳng mịn rồi lăn sơn nước." },
+        { "title": "Lau dọn vệ sinh & Bàn giao", "description": "Thu dọn phế thải xây dựng, hút bụi làm sạch sàn nhà sạch bong trước khi bàn giao chủ nhà." }
+      ],
+      "faqs": [
+        {
+          "question": "Bột bả và sơn nước sử dụng của hãng nào?",
+          "answer": "Chúng tôi cam kết sử dụng 100% bột bả Gyproc và sơn nước chính hãng cao cấp của Dulux hoặc Jotun theo đúng cam kết trong hợp đồng."
+        },
+        {
+          "question": "Bảo hành các hạng mục thi công trong bao lâu?",
+          "answer": "Ánh Ngọc Vinhomes bảo hành kỹ thuật thi công sơn bả, lắp đặt vách trần tối thiểu 12 tháng kể từ ngày ký biên bản bàn giao nghiệm thu."
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": "bi-quyet-don-nha-nhanh",
+      "slug": "bi-quyet-don-nha-nhanh",
+      "title": "5 bí quyết giữ nhà luôn thơm mát tự nhiên không cần hóa chất",
+      "category": "Mẹo hay gia đình",
+      "summary": "Khám phá những phương pháp đơn giản giúp loại bỏ mùi hôi hiệu quả chỉ bằng những nguyên liệu sẵn có trong...",
+      "content": "Một ngôi nhà ngăn nắp không chỉ mang lại cảm giác thoải mái mà còn bảo vệ sức khỏe cho cả gia đình. Tuy nhiên, việc dọn dẹp thường ngốn của bạn hàng giờ đồng hồ mỗi cuối tuần. Để giải quyết vấn đề đó, hãy áp dụng quy trình dọn dẹp thông minh từ chuyên gia:\n\n**1. Sử dụng vỏ cam, chanh và sả tươi**\nĐun sôi vỏ cam, chanh cùng vài nhánh sả đập dập. Hơi nước mang tinh dầu tự nhiên sẽ lan tỏa khắp căn phòng, khử sạch các mùi ẩm mốc khó chịu bám trên rèm cửa, tường nhà một cách nhanh chóng và an toàn.\n\n**2. Baking soda cho tủ lạnh và thảm**\nRải một lớp mỏng bột baking soda lên bề mặt thảm trải sàn, để yên trong 15-20 phút rồi hút bụi thật sạch. Baking soda sẽ hút hết mùi hôi tích tụ lâu ngày cực kỳ hiệu quả mà không để lại mùi hóa chất độc hại.\n\n**3. Giấm trắng khử mùi bếp**\nĐặt một bát giấm nhỏ ở góc bếp khi nấu nướng. Tính axit nhẹ của giấm bốc hơi sẽ trung hòa mùi dầu mỡ, cá tanh hay mùi khói bếp tức thì.\n\n**4. Bã cà phê làm thơm phòng khách**\nĐặt bã cà phê phơi khô vào các túi vải nhỏ treo góc phòng khách hoặc tủ quần áo để tạo hương thơm cà phê mộc mạc thư thái.\n\n**5. Trồng cây xanh lọc không khí**\nCác cây như trầu bà, lưỡi hổ, lan ý không chỉ trang trí cho căn hộ Vinhomes thêm xanh mát mà còn hấp thụ các khí độc có hại phát sinh từ nội thất gỗ hoặc đồ điện tử.",
+      "publishDate": "2026-10-18",
+      "readTime": "3 phút đọc",
+      "author": "Ánh Ngọc",
+      "image": "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=800&q=80",
+      "featured": true
+    },
+    {
+      "id": "tai-sao-can-giat-sofa",
+      "slug": "tai-sao-can-giat-sofa",
+      "title": "Vì sao nên vệ sinh sofa định kỳ 6 tháng một lần?",
+      "category": "Dịch vụ chuyên sâu",
+      "summary": "Sofa là nơi tích tụ nhiều bụi mịn và vi khuẩn nhất trong nhà. Tìm hiểu tác động của nó đến sức khỏe hô hấp của gia đình bạn...",
+      "content": "Ghế sofa nỉ, thảm trải sàn là nơi gia đình tụ họp, trẻ nhỏ vui chơi mỗi ngày. Nhìn bằng mắt thường, chúng ta thấy chúng có vẻ sạch sẽ sau khi được hút bụi. Tuy nhiên, các nghiên cứu sinh học chỉ ra rằng thảm và sofa là nơi tích tụ bụi mịn, tế bào da chết, mồ hôi và các bào tử nấm mốc lớn nhất trong nhà.\n\n**Những mối nguy hiểm tiềm ẩn từ sofa bẩn:**\n1. **Bụi mịn và mạt bụi:** Mạt bụi là sinh vật siêu nhỏ chuyên ăn tế bào da chết của con người rơi trên sofa. Chất thải của mạt bụi là tác nhân chính gây dị ứng da, nổi mẩn đỏ và các bệnh hen suyễn ở trẻ em.\n2. **Mùi ẩm mốc tích tụ:** Mồ hôi từ cơ thể, thức uống đổ ra ngấm sâu vào lớp đệm mút bên trong lâu ngày sẽ lên men, tạo ra mùi hôi khó chịu đặc trưng khi trời nồm ẩm.\n3. **Lây lan virus truyền nhiễm:** Bề mặt vải sofa là môi trường lý tưởng để các hạt virus bám dính và tồn tại nhiều ngày.\n\n**Giải pháp từ chuyên gia:**\nHút bụi hàng tuần chỉ loại bỏ được 30% bụi bẩn thô trên bề mặt. Để loại bỏ hoàn toàn vi khuẩn và bụi bẩn ngấm sâu bên trong, bạn cần giặt sofa và thảm bằng công nghệ phun hút ion hơi nước nóng tối thiểu 6 tháng một lần. Hơi nước nóng ở nhiệt độ trên 100°C sẽ tiêu diệt lập tức vi khuẩn và trứng côn trùng, mang lại sự an toàn tuyệt đối cho gia đình bạn.",
+      "publishDate": "2026-10-15",
+      "readTime": "4 phút đọc",
+      "author": "Ánh Ngọc",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+      "featured": false
+    },
+    {
+      "id": "huong-dan-diet-muoi-mua-mua",
+      "slug": "huong-dan-diet-muoi-mua-mua",
+      "title": "Nghệ thuật sắp xếp tủ đồ chuẩn phong cách sống tối giản",
+      "category": "Sắp xếp không gian",
+      "summary": "Căn phòng ngủ sạch sẽ và ngăn nắp sẽ giúp bạn giảm bớt lo âu và có giấc ngủ ngon hơn sau những giờ làm việc...",
+      "content": "Một căn tủ quần áo bừa bộn không chỉ làm mất thời gian mỗi khi chọn đồ mà còn gây ra cảm giác ngột ngạt khi bước vào phòng ngủ. Hãy áp dụng triết lý tối giản của người Nhật để sắp đặt lại tủ đồ của bạn gọn gàng nhất:\n\n**1. Gom tất cả đồ đạc và lọc lọc lại**\nLấy toàn bộ quần áo ra khỏi tủ. Chia chúng thành 3 nhóm: Thường mặc, Thỉnh thoảng mặc, và Không bao giờ mặc nữa. Hãy dũng cảm quyên góp hoặc bỏ đi những trang phục bạn đã không đụng tới trong suốt 1 năm qua.\n\n**2. Phân loại theo mùa và theo chức năng**\nXếp quần áo mùa đông sang một bên, cất vào túi hút chân không nếu không sử dụng. Chia ngăn treo cho đồ đi làm, ngăn gấp cho đồ mặc ở nhà và ngăn tủ nhỏ cho phụ kiện, tất vớ.\n\n**3. Học cách cuộn tròn quần áo thay vì gấp phẳng**\nCuộn tròn áo thun, quần jeans giúp tiết kiệm đến 50% diện tích ngăn chứa đồ, đồng thời giúp bạn dễ dàng nhìn thấy và rút món đồ cần tìm mà không làm xô lệch các bộ quần áo xung quanh.\n\n**4. Sử dụng móc áo đồng bộ**\nThay thế các móc áo nhựa nhiều màu sắc bằng bộ móc gỗ hoặc móc nhung đồng bộ tông màu. Điều này tạo hiệu ứng thị giác cực kỳ ngăn nắp, sang trọng giống như các boutique thời trang cao cấp.\n\nNếu bạn không có thời gian cho một đợt F5 sắp xếp đồ đạc lớn như vậy, hãy liên hệ ngay dịch vụ Dọn dẹp chuyên sâu của Vệ Sinh 247. Đội ngũ nhân viên chu đáo của chúng tôi sẽ giúp bạn phân loại và xếp đặt gọn gàng ngăn nắp chuẩn khách sạn.",
+      "publishDate": "2026-10-10",
+      "readTime": "3 phút đọc",
+      "author": "Ánh Ngọc",
+      "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80",
+      "featured": false
+    }
+  ]
+}

@@ -356,26 +356,24 @@
   }
 }
 
-/* ---- Reveal (hero + about only — cut motion elsewhere) ---- */
+/* ---- Reveal — replays on every scroll in/out via IntersectionObserver (Reveal.tsx) ---- */
 
 .reveal {
   opacity: 0;
-  transform: translateY(10px);
-  animation: reveal var(--home-dur-long) var(--home-ease-out) forwards;
-  animation-delay: calc(var(--i, 0) * 90ms);
+  transform: translateY(28px);
+  transition: opacity 760ms var(--home-ease-out), transform 760ms var(--home-ease-out);
+  transition-delay: calc(var(--i, 0) * 90ms);
 }
 
-@keyframes reveal {
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.reveal[data-revealed] {
+  opacity: 1;
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {
-    animation-duration: 150ms;
-    transform: none;
+    transition-duration: 150ms;
+    transition-delay: 0ms;
   }
 }
 

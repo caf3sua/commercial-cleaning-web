@@ -4,6 +4,7 @@ import { Fraunces, Be_Vietnam_Pro } from "next/font/google";
 import { Phone, ArrowRight, ShieldCheck, CheckCircle2, MapPin } from "lucide-react";
 import { getServices, getLatestNews, getCompanyInfo } from "@/services/dataService";
 import ContactForm from "@/components/ContactForm";
+import Reveal from "@/components/Reveal";
 import styles from "./page.module.css";
 
 const fraunces = Fraunces({
@@ -28,10 +29,14 @@ export default async function Page() {
 
   return (
     <div className={`${styles.page} ${fraunces.variable} ${beVietnamPro.variable} w-full`}>
+      <noscript>
+        <style>{`.${styles.reveal}{opacity:1!important;transform:none!important}`}</style>
+      </noscript>
+
       {/* 1. HERO — Split Studio diptych */}
       <section className={`${styles.hero} ${styles.container}`}>
         <div className={styles.diptych}>
-          <div style={{ "--i": 0 } as CSSProperties} className={styles.reveal}>
+          <Reveal style={{ "--i": 0 } as CSSProperties} className={styles.reveal}>
             <span className={styles.kicker}>Vinhomes Premium Service</span>
 
             <h1 className={`${styles.heading} ${styles.headingXl}`}>
@@ -80,9 +85,9 @@ export default async function Page() {
                 <strong>500+</strong> dự án Vinhomes đã thi công
               </span>
             </div>
-          </div>
+          </Reveal>
 
-          <div
+          <Reveal
             style={{ "--i": 1, position: "relative" } as CSSProperties}
             className={`${styles.diptychMedia} ${styles.reveal}`}
           >
@@ -114,7 +119,7 @@ export default async function Page() {
                 </span>
               </span>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -122,14 +127,17 @@ export default async function Page() {
       <section className={`${styles.section} ${styles.sectionAlt}`}>
         <div className={styles.container}>
           <div className={`${styles.diptych} ${styles.diptychReverse}`}>
-            <div className={`${styles.diptychMedia} ${styles.frame} ${styles.frame1x1}`}>
+            <Reveal
+              style={{ "--i": 0 } as CSSProperties}
+              className={`${styles.diptychMedia} ${styles.frame} ${styles.frame1x1} ${styles.reveal}`}
+            >
               <img
                 src="https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=600&q=80"
                 alt="Không gian sofa được vệ sinh sạch sẽ"
               />
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal style={{ "--i": 1 } as CSSProperties} className={styles.reveal}>
               <span className={styles.kicker}>Về Ánh Ngọc Vinhomes</span>
               <h2 className={`${styles.heading} ${styles.headingLg}`}>
                 Kiến Tạo Không Gian Sống Tinh Khiết
@@ -157,7 +165,7 @@ export default async function Page() {
                   <span className={styles.statLabel}>Căn hộ hoàn thành</span>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -165,17 +173,22 @@ export default async function Page() {
       {/* 3. SERVICES — three stacked alternating rows, not an icon-tile grid */}
       <section className={styles.section}>
         <div className={styles.container}>
-          <div style={{ maxWidth: "40rem", marginBottom: "var(--home-space-2xl)" }}>
-            <span className={styles.kicker}>Dịch vụ của chúng tôi</span>
-            <h2 className={`${styles.heading} ${styles.headingLg}`}>
-              Giải Pháp Vệ Sinh Toàn Diện
-            </h2>
-          </div>
+          <Reveal
+            style={{ marginBottom: "var(--home-space-2xl)" } as CSSProperties}
+            className={styles.reveal}
+          >
+            <div style={{ maxWidth: "40rem" }}>
+              <span className={styles.kicker}>Dịch vụ của chúng tôi</span>
+              <h2 className={`${styles.heading} ${styles.headingLg}`}>
+                Giải Pháp Vệ Sinh Toàn Diện
+              </h2>
+            </div>
+          </Reveal>
 
           {homepageServices.map((service, index) => (
-            <div
+            <Reveal
               key={service.slug}
-              className={`${styles.serviceRow} ${index % 2 === 1 ? styles.reverse : ""}`}
+              className={`${styles.serviceRow} ${index % 2 === 1 ? styles.reverse : ""} ${styles.reveal}`}
             >
               <div className={`${styles.frame} ${styles.frame4x3}`}>
                 <img src={service.bannerImage} alt={service.title} />
@@ -193,7 +206,7 @@ export default async function Page() {
                   <ArrowRight size={14} />
                 </Link>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -213,8 +226,12 @@ export default async function Page() {
           </div>
 
           <div className={styles.newsList}>
-            {newsList.map((post) => (
-              <div key={post.slug} className={styles.newsItem}>
+            {newsList.map((post, index) => (
+              <Reveal
+                key={post.slug}
+                style={{ "--i": index % 3 } as CSSProperties}
+                className={`${styles.newsItem} ${styles.reveal}`}
+              >
                 <div className={`${styles.frame} ${styles.frame4x3}`}>
                   <img src={post.image} alt={post.title} />
                 </div>
@@ -230,7 +247,7 @@ export default async function Page() {
                     {post.publishDate.split("-").reverse().join("/")}
                   </span>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -240,9 +257,14 @@ export default async function Page() {
       <section id="booking-section" className={styles.section} style={{ scrollMarginTop: "4rem" }}>
         <div className={styles.container}>
           <div className={styles.contactGrid}>
-            <ContactForm />
+            <Reveal style={{ "--i": 0 } as CSSProperties} className={styles.reveal}>
+              <ContactForm />
+            </Reveal>
 
-            <div className={styles.infoPanel}>
+            <Reveal
+              style={{ "--i": 1 } as CSSProperties}
+              className={`${styles.infoPanel} ${styles.reveal}`}
+            >
               <div className={styles.mapFrame}>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1099684351336!2d105.93774847602058!3d20.988225089166922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9db7120df0f%3A0x7d67cfb42e61a6b0!2sVinhomes%20Ocean%20Park!5e0!3m2!1svi!2s!4v1721400000000!5m2!1svi!2s"
@@ -282,7 +304,7 @@ export default async function Page() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>

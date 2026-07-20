@@ -64,6 +64,7 @@ export interface NewsItem {
   author: string;
   image: string;
   featured: boolean;
+  views: number;
 }
 
 // Giả lập cuộc gọi API bất đồng bộ (Async) để sau này dễ thay bằng Call API thật

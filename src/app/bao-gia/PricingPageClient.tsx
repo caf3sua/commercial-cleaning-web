@@ -2,7 +2,28 @@
 
 import { useState } from "react";
 import PricingCalculator from "@/components/PricingCalculator";
-import { Phone, Mail, Check, Shield, Leaf, Send, Loader2, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Send, Loader2, CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 15 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const } }
+};
+
+const scaleIn = {
+  hidden: { opacity: 0, scale: 0.97 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
 
 export default function PricingPageClient() {
   const [formData, setFormData] = useState({
@@ -21,7 +42,6 @@ export default function PricingPageClient() {
     }
     setStatus("submitting");
     try {
-      // Simulate form submission
       await new Promise((resolve) => setTimeout(resolve, 1200));
       setStatus("success");
       setFormData({ name: "", phone: "", address: "", note: "" });
@@ -31,11 +51,16 @@ export default function PricingPageClient() {
   };
 
   return (
-    <div className="w-full bg-[#f8fafc] min-h-screen font-sans">
+    <div className="w-full bg-[#f8fafc] min-h-screen font-sans overflow-x-hidden">
       
       {/* 1. Header Intro Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#eff6ff] to-[#f8fafc] py-20 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-5">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-5"
+        >
           <h1 className="text-4xl sm:text-5xl font-black text-[#0f172a] tracking-tight leading-tight">
             Bảng Giá Dịch Vụ Minh Bạch
           </h1>
@@ -44,24 +69,33 @@ export default function PricingPageClient() {
           </p>
           <div className="flex justify-center items-center gap-3 pt-2">
             <span className="inline-flex items-center space-x-1 px-3 py-1 rounded-full bg-[#eff6ff] text-[#0038a8] border border-[#dbeafe] text-[10px] font-extrabold uppercase tracking-wider">
-              <Shield className="w-3 h-3 mr-1 text-[#0038a8]" />
               Vinhomes Exclusive
             </span>
             <span className="inline-flex items-center space-x-1 px-3 py-1 rounded-full bg-[#ecfdf5] text-[#047857] border border-[#d1fae5] text-[10px] font-extrabold uppercase tracking-wider">
-              <Leaf className="w-3 h-3 mr-1 text-[#047857]" />
               Non-Toxic
             </span>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* 2. Pricing Calculator Section */}
-      <section className="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={scaleIn}
+        className="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
         <PricingCalculator />
-      </section>
+      </motion.section>
 
       {/* 3. Detailed Pricing Table */}
-      <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={fadeInUp}
+        className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-slate-800">
             Bảng giá niêm yết chi tiết
@@ -121,15 +155,21 @@ export default function PricingPageClient() {
         <p className="text-[10px] text-slate-400 font-bold mt-4 leading-relaxed italic">
           * Giá trên chưa bao gồm thuế GTGT (VAT 10%). Đối với diện tích lớn trên 500m², quý khách vui lòng liên hệ trực tiếp để có giá ưu đãi.
         </p>
-      </section>
+      </motion.section>
 
       {/* 4. Survey Request Form Section */}
       <section id="request-quote-section" className="py-16 bg-[#eff6ff]/35 border-t border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+            className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+          >
             
             {/* Left Column: Form Description & Contact Info */}
-            <div className="lg:col-span-6 space-y-6">
+            <motion.div variants={fadeInUp} className="lg:col-span-6 space-y-6">
               <div className="space-y-3">
                 <h2 className="text-2xl sm:text-3xl font-black text-slate-800 tracking-tight leading-tight">
                   Yêu cầu khảo sát & Báo giá chi tiết
@@ -160,10 +200,10 @@ export default function PricingPageClient() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Column: Form Card */}
-            <div className="lg:col-span-6">
+            <motion.div variants={scaleIn} className="lg:col-span-6">
               <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 shadow-sm">
                 {status === "success" ? (
                   <div className="text-center py-12 space-y-4">
@@ -261,9 +301,9 @@ export default function PricingPageClient() {
                   </form>
                 )}
               </div>
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
         </div>
       </section>
 

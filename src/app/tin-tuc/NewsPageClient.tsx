@@ -2,12 +2,33 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { Search, ArrowRight, Phone, Calendar } from "lucide-react";
+import { Search, ArrowRight, Phone } from "lucide-react";
 import { NewsItem } from "@/services/dataService";
+import { motion } from "framer-motion";
 
 interface NewsPageClientProps {
   initialNews: NewsItem[];
 }
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 15 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const } }
+};
+
+const scaleIn = {
+  hidden: { opacity: 0, scale: 0.97 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const } }
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08
+    }
+  }
+};
 
 export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -81,7 +102,6 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
 
   // 3 Popular posts matching screenshot
   const popularPosts = useMemo(() => {
-    // Sort by views or fetch matching titles
     return [...initialNews]
       .sort((a, b) => b.views - a.views)
       .slice(0, 3);
@@ -112,17 +132,22 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
   };
 
   return (
-    <div className="w-full bg-[#f8fafc] min-h-screen font-sans">
+    <div className="w-full bg-[#f8fafc] min-h-screen font-sans overflow-x-hidden">
       
       {/* Header Info Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8"
+      >
         <h1 className="text-4xl font-extrabold text-[#0f172a] tracking-tight leading-none mb-3">
           Cẩm nang & Tin tức
         </h1>
         <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-3xl font-medium">
           Cập nhật những mẹo dọn dẹp hữu ích, kiến thức vệ sinh chuyên sâu và các ưu đãi mới nhất từ Ánh Ngọc Vinhomes.
         </p>
-      </section>
+      </motion.section>
 
       {/* Main Content Grid */}
       <section className="pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -132,14 +157,24 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
           <div className="lg:col-span-8 space-y-8">
             
             {filteredNews.length === 0 ? (
-              <div className="bg-white rounded-2xl p-12 text-center border border-slate-100 shadow-sm">
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={fadeInUp}
+                className="bg-white rounded-2xl p-12 text-center border border-slate-100 shadow-sm"
+              >
                 <p className="text-slate-400 font-medium">Không tìm thấy bài viết nào phù hợp.</p>
-              </div>
+              </motion.div>
             ) : (
-              <>
+              <div className="space-y-8">
                 {/* Highlighted Featured Post (Only on Page 1) */}
                 {featuredPost && (
-                  <div className="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={scaleIn}
+                    className="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                  >
                     <div className="grid grid-cols-1 md:grid-cols-2">
                       <div className="relative aspect-[4/3] md:aspect-auto w-full h-full overflow-hidden bg-slate-100 min-h-[260px]">
                         <img
@@ -178,15 +213,24 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 )}
 
                 {/* Regular Posts Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={staggerContainer}
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+                >
                   {gridPosts.map((post) => {
                     const isProject = normalizeCategory(post.category) === "Công trình đã hoàn thành";
                     return (
-                      <article key={post.slug} className="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full">
+                      <motion.article
+                        key={post.slug}
+                        variants={fadeInUp}
+                        className="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full"
+                      >
                         <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
                           <img
                             src={post.image}
@@ -221,14 +265,19 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                             </Link>
                           </div>
                         </div>
-                      </article>
+                      </motion.article>
                     );
                   })}
-                </div>
+                </motion.div>
 
                 {/* Pagination component */}
                 {totalPages > 1 && (
-                  <div className="flex justify-center items-center space-x-2 pt-6">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeInUp}
+                    className="flex justify-center items-center space-x-2 pt-6"
+                  >
                     <button
                       onClick={() => handlePageChange(safeCurrentPage - 1)}
                       disabled={safeCurrentPage === 1}
@@ -256,18 +305,23 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                     >
                       &gt;
                     </button>
-                  </div>
+                  </motion.div>
                 )}
-              </>
+              </div>
             )}
 
           </div>
 
           {/* Right side: Sidebar (4 columns) */}
-          <div className="lg:col-span-4 space-y-6">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="lg:col-span-4 space-y-6"
+          >
             
             {/* Search Widget */}
-            <div className="bg-[#eff6ff]/60 border border-slate-100 p-6 rounded-2xl shadow-sm space-y-3">
+            <motion.div variants={scaleIn} className="bg-[#eff6ff]/60 border border-slate-100 p-6 rounded-2xl shadow-sm space-y-3">
               <h3 className="font-extrabold text-[#0f172a] text-sm">
                 Tìm kiếm bài viết
               </h3>
@@ -284,10 +338,10 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                 />
                 <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
               </div>
-            </div>
+            </motion.div>
 
             {/* Categories Widget */}
-            <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm space-y-4">
+            <motion.div variants={fadeInUp} className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm space-y-4">
               <h3 className="font-extrabold text-[#0f172a] text-sm pb-1 border-b border-slate-50">
                 Chuyên mục
               </h3>
@@ -317,10 +371,10 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                   );
                 })}
               </div>
-            </div>
+            </motion.div>
 
             {/* Popular Posts Widget */}
-            <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm space-y-4">
+            <motion.div variants={fadeInUp} className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm space-y-4">
               <h3 className="font-extrabold text-[#0f172a] text-sm pb-1 border-b border-slate-50">
                 Bài viết phổ biến
               </h3>
@@ -345,10 +399,10 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Call to Action Banner */}
-            <div className="relative bg-[#0038a8] text-white p-7 rounded-2xl overflow-hidden shadow-md flex flex-col justify-between min-h-[220px]">
+            <motion.div variants={scaleIn} className="relative bg-[#0038a8] text-white p-7 rounded-2xl overflow-hidden shadow-md flex flex-col justify-between min-h-[220px]">
               {/* Vacuum SVG background overlay */}
               <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-x-4 translate-y-4">
                 <svg width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
@@ -371,21 +425,24 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                   GỌI NGAY: 0911976839
                 </a>
               </div>
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
 
         </div>
       </section>
 
       {/* Floating Green Hotline Button */}
-      <a
+      <motion.a
         href="tel:0911976839"
-        className="fixed right-6 bottom-24 z-50 w-12 h-12 rounded-full bg-[#059669] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300 animate-pulse"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.6, type: "spring", stiffness: 260, damping: 20 }}
+        className="fixed right-6 bottom-24 z-50 w-12 h-12 rounded-full bg-[#059669] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300"
         title="Gọi hotline tư vấn"
       >
-        <Phone className="w-5 h-5 fill-white" />
-      </a>
+        <Phone className="w-5 h-5 fill-white animate-pulse" />
+      </motion.a>
 
     </div>
   );

@@ -70,7 +70,7 @@ export default function ContactForm() {
           </p>
           <button
             onClick={() => setStatus("idle")}
-            className="mt-4 px-6 py-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold rounded-full text-xs transition-colors shadow-md shadow-brand-blue/10"
+            className="mt-4 px-6 py-2.5 bg-brand-green hover:bg-brand-green-hover text-white font-bold rounded-full text-xs transition-colors shadow-md shadow-brand-green/10"
           >
             Gửi yêu cầu khác
           </button>
@@ -96,8 +96,8 @@ export default function ContactForm() {
                 placeholder="Nguyễn Văn A"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
-                  errors.name ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-blue"
+                className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/20 transition-all ${
+                  errors.name ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-green"
                 }`}
               />
               {errors.name && <p className="text-[10px] text-rose-500 font-bold mt-1">{errors.name}</p>}
@@ -113,8 +113,8 @@ export default function ContactForm() {
                 placeholder="09xx xxx xxx"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
-                  errors.phone ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-blue"
+                className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/20 transition-all ${
+                  errors.phone ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-green"
                 }`}
               />
               {errors.phone && <p className="text-[10px] text-rose-500 font-bold mt-1">{errors.phone}</p>}
@@ -132,8 +132,8 @@ export default function ContactForm() {
               placeholder="example@gmail.com"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
-                errors.email ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-blue"
+              className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/20 transition-all ${
+                errors.email ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-green"
               }`}
             />
             {errors.email && <p className="text-[10px] text-rose-500 font-bold mt-1">{errors.email}</p>}
@@ -150,8 +150,8 @@ export default function ContactForm() {
               placeholder="Mô tả dịch vụ quý khách đang quan tâm (Vệ sinh sau xây dựng, vệ sinh định kỳ...)"
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
-                errors.message ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-blue"
+              className={`w-full bg-slate-50 border rounded-xl px-4 py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-brand-green/20 transition-all ${
+                errors.message ? "border-rose-400 focus:ring-rose-200" : "border-slate-200 focus:border-brand-green"
               }`}
             />
             {errors.message && <p className="text-[10px] text-rose-500 font-bold mt-1">{errors.message}</p>}
@@ -161,7 +161,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-full flex items-center justify-center bg-brand-blue hover:bg-brand-blue-hover text-white font-bold py-3.5 px-6 rounded-xl text-xs sm:text-sm tracking-wider transition-colors duration-200 shadow-md shadow-brand-blue/15 disabled:opacity-75 disabled:cursor-not-allowed mt-2 group"
+            className="w-full flex items-center justify-center bg-brand-green hover:bg-brand-green-hover text-white font-bold py-3.5 px-6 rounded-xl text-xs sm:text-sm tracking-wider transition-colors duration-200 shadow-md shadow-brand-green/15 disabled:opacity-75 disabled:cursor-not-allowed mt-2 group"
           >
             {status === "submitting" ? (
               <>

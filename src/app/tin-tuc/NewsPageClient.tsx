@@ -186,14 +186,14 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                       <div className="p-6 sm:p-8 flex flex-col justify-between space-y-4">
                         <div className="space-y-3">
                           <div className="flex items-center space-x-3">
-                            <span className="bg-[#0038a8] text-white text-[10px] font-extrabold tracking-wider uppercase px-3 py-1 rounded-full shadow-sm">
+                            <span className="bg-brand-green text-white text-[10px] font-extrabold tracking-wider uppercase px-3 py-1 rounded-full shadow-sm">
                               {normalizeCategory(featuredPost.category).toUpperCase()}
                             </span>
                             <span className="text-[11px] font-bold text-slate-400">
                               {formatDateToVietnamese(featuredPost.publishDate)}
                             </span>
                           </div>
-                          <h2 className="text-xl sm:text-2xl font-black text-slate-800 leading-snug group-hover:text-[#0038a8] transition-colors">
+                          <h2 className="text-xl sm:text-2xl font-black text-slate-800 leading-snug group-hover:text-brand-green transition-colors">
                             <Link href={`/tin-tuc/${featuredPost.slug}`}>
                               {featuredPost.title}
                             </Link>
@@ -205,7 +205,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                         <div className="pt-2">
                           <Link
                             href={`/tin-tuc/${featuredPost.slug}`}
-                            className="inline-flex items-center text-[#0038a8] hover:text-[#002d96] text-xs font-bold transition-colors"
+                            className="inline-flex items-center text-brand-green hover:text-brand-green-hover text-xs font-bold transition-colors"
                           >
                             Xem chi tiết
                             <ArrowRight className="w-4 h-4 ml-1.5" />
@@ -246,7 +246,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                                 {normalizeCategory(post.category).toUpperCase()}
                               </span>
                             </div>
-                            <h3 className="text-base sm:text-lg font-black text-[#0f172a] line-clamp-2 leading-snug group-hover:text-[#0038a8] transition-colors">
+                            <h3 className="text-base sm:text-lg font-black text-[#0f172a] line-clamp-2 leading-snug group-hover:text-brand-green transition-colors">
                               <Link href={`/tin-tuc/${post.slug}`}>
                                 {post.title}
                               </Link>
@@ -258,7 +258,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                           <div className="pt-2">
                             <Link
                               href={`/tin-tuc/${post.slug}`}
-                              className="inline-flex items-center text-[#0038a8] hover:text-[#002d96] text-xs font-bold transition-colors"
+                              className="inline-flex items-center text-brand-green hover:text-brand-green-hover text-xs font-bold transition-colors"
                             >
                               {isProject ? "Xem dự án" : "Đọc thêm"}
                               <ArrowRight className="w-4 h-4 ml-1.5" />
@@ -291,7 +291,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                         onClick={() => handlePageChange(pageNum)}
                         className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm transition ${
                           safeCurrentPage === pageNum
-                            ? "bg-[#0038a8] text-white"
+                            ? "bg-brand-green text-white"
                             : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
                         }`}
                       >
@@ -321,7 +321,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
           >
             
             {/* Search Widget */}
-            <motion.div variants={scaleIn} className="bg-[#eff6ff]/60 border border-slate-100 p-6 rounded-2xl shadow-sm space-y-3">
+            <motion.div variants={scaleIn} className="bg-brand-green-light/60 border border-slate-100 p-6 rounded-2xl shadow-sm space-y-3">
               <h3 className="font-extrabold text-[#0f172a] text-sm">
                 Tìm kiếm bài viết
               </h3>
@@ -334,7 +334,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                     setSearchQuery(e.target.value);
                     setCurrentPage(1);
                   }}
-                  className="w-full bg-white pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#0038a8] focus:ring-1 focus:ring-[#0038a8] transition shadow-sm"
+                  className="w-full bg-white pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition shadow-sm"
                 />
                 <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
               </div>
@@ -357,13 +357,13 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                       }}
                       className={`w-full flex items-center justify-between py-2 px-3 rounded-lg text-xs font-semibold transition ${
                         isActive
-                          ? "bg-[#eff6ff] text-[#0038a8]"
+                          ? "bg-brand-green-light text-brand-green"
                           : "text-slate-600 hover:bg-slate-50"
                       }`}
                     >
                       <span>{cat.name}</span>
                       <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold ${
-                        isActive ? "bg-[#0038a8] text-white" : "bg-slate-100 text-slate-500"
+                        isActive ? "bg-brand-green text-white" : "bg-slate-100 text-slate-500"
                       }`}>
                         {cat.count.toString().padStart(2, '0')}
                       </span>
@@ -387,7 +387,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                       className="w-14 h-14 rounded-lg object-cover shrink-0 bg-slate-100 group-hover:opacity-90 transition"
                     />
                     <div className="space-y-1">
-                      <h4 className="text-xs font-bold text-slate-800 leading-snug group-hover:text-[#0038a8] transition-colors line-clamp-2">
+                      <h4 className="text-xs font-bold text-slate-800 leading-snug group-hover:text-brand-green transition-colors line-clamp-2">
                         <Link href={`/tin-tuc/${post.slug}`}>
                           {post.title}
                         </Link>
@@ -402,7 +402,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
             </motion.div>
 
             {/* Call to Action Banner */}
-            <motion.div variants={scaleIn} className="relative bg-[#0038a8] text-white p-7 rounded-2xl overflow-hidden shadow-md flex flex-col justify-between min-h-[220px]">
+            <motion.div variants={scaleIn} className="relative bg-brand-green text-white p-7 rounded-2xl overflow-hidden shadow-md flex flex-col justify-between min-h-[220px]">
               {/* Vacuum SVG background overlay */}
               <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-x-4 translate-y-4">
                 <svg width="180" height="180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
@@ -413,14 +413,14 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                 <h3 className="font-black text-lg leading-tight">
                   Cần dọn dẹp ngay?
                 </h3>
-                <p className="text-blue-100 text-[11px] leading-relaxed font-medium">
+                <p className="text-green-100 text-[11px] leading-relaxed font-medium">
                   Đội ngũ chuyên nghiệp của Ánh Ngọc luôn sẵn sàng phục vụ 24/7 tại các phân khu Vinhomes.
                 </p>
               </div>
               <div className="pt-4 relative z-10">
                 <a
                   href="tel:0911976839"
-                  className="block w-full text-center bg-white text-[#0038a8] hover:bg-slate-50 font-bold py-3 rounded-xl text-xs transition duration-200"
+                  className="block w-full text-center bg-white text-brand-green hover:bg-slate-50 font-bold py-3 rounded-xl text-xs transition duration-200"
                 >
                   GỌI NGAY: 0911976839
                 </a>

@@ -18,7 +18,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       {/* Blog Image */}
       <div className="relative aspect-video w-full overflow-hidden bg-slate-100">
         {/* Category Badge */}
-        <span className="absolute top-3 left-3 z-10 bg-brand-blue text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full shadow-sm">
+        <span className="absolute top-3 left-3 z-10 bg-brand-green text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full shadow-sm">
           {post.category}
         </span>
         <img
@@ -49,7 +49,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           </div>
 
           {/* Title */}
-          <h3 className="text-base sm:text-lg font-bold text-slate-800 line-clamp-2 group-hover:text-brand-blue transition-colors">
+          <h3 className="text-base sm:text-lg font-bold text-slate-800 line-clamp-2 group-hover:text-brand-green transition-colors">
             <Link href={`/tin-tuc/${post.slug}`}>
               {post.title}
             </Link>
@@ -65,7 +65,7 @@ export default function BlogCard({ post }: BlogCardProps) {
         <div className="pt-4 mt-4 border-t border-slate-50 flex items-center">
           <Link
             href={`/tin-tuc/${post.slug}`}
-            className="text-xs font-bold text-brand-blue hover:text-brand-blue-hover flex items-center group/btn"
+            className="text-xs font-bold text-brand-green hover:text-brand-green-hover flex items-center group/btn"
           >
             Đọc tiếp
             <ArrowRight className="w-3.5 h-3.5 ml-1 transition-transform group-hover/btn:translate-x-1" />

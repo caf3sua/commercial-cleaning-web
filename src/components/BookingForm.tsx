@@ -61,12 +61,12 @@ export default function BookingForm({ services, preselectedService = "" }: Booki
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <h3 className="text-lg font-bold text-white">Gửi Yêu Cầu Thành Công!</h3>
-          <p className="text-blue-100 text-xs sm:text-sm max-w-sm mx-auto leading-relaxed">
+          <p className="text-green-100 text-xs sm:text-sm max-w-sm mx-auto leading-relaxed">
             Cảm ơn bạn đã đăng ký tư vấn. Đội ngũ chuyên gia của Ánh Ngọc sẽ liên hệ lại với bạn trong vòng 15 phút.
           </p>
           <button
             onClick={() => setStatus("idle")}
-            className="mt-4 px-6 py-2 bg-white text-brand-blue font-bold rounded-full text-xs hover:bg-blue-50 transition-colors"
+            className="mt-4 px-6 py-2 bg-white text-brand-green font-bold rounded-full text-xs hover:bg-green-50 transition-colors"
           >
             Gửi yêu cầu khác
           </button>
@@ -144,7 +144,7 @@ export default function BookingForm({ services, preselectedService = "" }: Booki
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-full flex items-center justify-center bg-white hover:bg-blue-50 text-brand-blue font-bold py-3.5 px-6 rounded-xl text-xs sm:text-sm tracking-widest uppercase transition-colors duration-200 shadow-md shadow-brand-blue/10 disabled:opacity-75 disabled:cursor-not-allowed mt-6"
+            className="w-full flex items-center justify-center bg-white hover:bg-green-50 text-brand-green font-bold py-3.5 px-6 rounded-xl text-xs sm:text-sm tracking-widest uppercase transition-colors duration-200 shadow-md shadow-brand-green/10 disabled:opacity-75 disabled:cursor-not-allowed mt-6"
           >
             {status === "submitting" ? (
               <>

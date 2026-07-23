@@ -57,13 +57,13 @@ export default async function NewsDetailPage({ params }: PageProps) {
         <div className="relative z-10 max-w-4xl mx-auto px-4 space-y-4">
           <Link
             href="/tin-tuc"
-            className="inline-flex items-center text-blue-300 hover:text-white text-xs font-bold transition-colors mb-1"
+            className="inline-flex items-center text-green-300 hover:text-white text-xs font-bold transition-colors mb-1"
           >
             <ChevronLeft className="w-4 h-4 mr-1" />
             Quay lại tin tức
           </Link>
           
-          <span className="inline-block bg-brand-blue text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full shadow-sm">
+          <span className="inline-block bg-brand-green text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full shadow-sm">
             {post.category}
           </span>
 
@@ -74,15 +74,15 @@ export default async function NewsDetailPage({ params }: PageProps) {
           {/* Metadata */}
           <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-400 pt-2 border-t border-white/10">
             <span className="flex items-center">
-              <Calendar className="w-4 h-4 mr-1.5 text-brand-blue-border" />
+              <Calendar className="w-4 h-4 mr-1.5 text-brand-green-border" />
               {formatDate(post.publishDate)}
             </span>
             <span className="flex items-center">
-              <Clock className="w-4 h-4 mr-1.5 text-brand-blue-border" />
+              <Clock className="w-4 h-4 mr-1.5 text-brand-green-border" />
               {post.readTime}
             </span>
             <span className="flex items-center">
-              <User className="w-4 h-4 mr-1.5 text-brand-blue-border" />
+              <User className="w-4 h-4 mr-1.5 text-brand-green-border" />
               Tác giả: {post.author}
             </span>
           </div>
@@ -107,7 +107,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
               </div>
 
               {/* Summary callout */}
-              <p className="text-slate-700 text-sm sm:text-base font-bold italic border-l-4 border-brand-blue pl-4 py-2 leading-relaxed bg-slate-50 rounded-r-xl p-4">
+              <p className="text-slate-700 text-sm sm:text-base font-bold italic border-l-4 border-brand-green pl-4 py-2 leading-relaxed bg-slate-50 rounded-r-xl p-4">
                 {post.summary}
               </p>
 
@@ -132,7 +132,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
                       <Link
                         key={newsItem.slug}
                         href={`/tin-tuc/${newsItem.slug}`}
-                        className="text-xs text-slate-650 hover:text-brand-blue font-bold flex items-start group py-1 border-b border-slate-50/50 pb-2 last:border-0"
+                        className="text-xs text-slate-650 hover:text-brand-green font-bold flex items-start group py-1 border-b border-slate-50/50 pb-2 last:border-0"
                       >
                         <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0 mr-1 mt-0.5" />
                         <span className="line-clamp-2 leading-relaxed">{newsItem.title}</span>
@@ -151,14 +151,14 @@ export default async function NewsDetailPage({ params }: PageProps) {
                 <div className="space-y-2 pt-2 border-t border-slate-800">
                   <a
                     href="tel:0911976839"
-                    className="flex items-center text-brand-blue hover:text-white font-black text-sm"
+                    className="flex items-center text-brand-green hover:text-white font-black text-sm"
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     0911.976.839
                   </a>
                   <a
                     href="tel:0938129969"
-                    className="flex items-center text-brand-blue hover:text-white font-black text-sm"
+                    className="flex items-center text-brand-green hover:text-white font-black text-sm"
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     0938.129.969

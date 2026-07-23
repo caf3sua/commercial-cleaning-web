@@ -84,7 +84,7 @@ export default function PricingCalculator() {
   return (
     <div className="bg-white rounded-2xl border border-slate-100 p-6 md:p-8 shadow-sm">
       <div className="flex items-center space-x-3 mb-8">
-        <div className="text-[#0038a8]">
+        <div className="text-brand-green">
           <Calculator className="w-5 h-5" />
         </div>
         <h3 className="text-base sm:text-lg font-bold text-slate-800">
@@ -111,7 +111,7 @@ export default function PricingCalculator() {
                     onClick={() => setSelectedService(svc.id)}
                     className={`flex flex-col items-start p-4 rounded-xl border text-left transition-all ${
                       isSelected
-                        ? "border-[#0038a8] bg-[#eff6ff]/30 ring-1 ring-[#0038a8]/10"
+                        ? "border-brand-green bg-brand-green-light/30 ring-1 ring-brand-green/10"
                         : "border-slate-200 hover:border-slate-300 bg-white"
                     }`}
                   >
@@ -130,7 +130,7 @@ export default function PricingCalculator() {
               <label className="block text-[11px] font-black text-slate-500 uppercase tracking-wider">
                 2. DIỆN TÍCH (M²)
               </label>
-              <span className="text-lg font-black text-[#0038a8]">
+              <span className="text-lg font-black text-brand-green">
                 {area} m²
               </span>
             </div>
@@ -141,7 +141,7 @@ export default function PricingCalculator() {
               max="500"
               value={area}
               onChange={(e) => setArea(parseInt(e.target.value))}
-              className="w-full h-1.5 bg-[#eff6ff] rounded-lg appearance-none cursor-pointer accent-[#0038a8]"
+              className="w-full h-1.5 bg-brand-green-light rounded-lg appearance-none cursor-pointer accent-brand-green"
             />
             <div className="flex justify-between text-[10px] text-slate-400 font-bold mt-2">
               <span>30 m²</span>
@@ -164,12 +164,12 @@ export default function PricingCalculator() {
                     onClick={() => handleAddonChange(addon.id)}
                     className={`flex items-center space-x-2.5 px-4 py-2.5 rounded-full border text-xs font-bold transition-all ${
                       isChecked
-                        ? "border-[#0038a8] bg-[#eff6ff]/30 text-[#0038a8]"
+                        ? "border-brand-green bg-brand-green-light/30 text-brand-green"
                         : "border-slate-200 hover:border-slate-300 text-slate-600 bg-white"
                     }`}
                   >
                     <span className={`w-3.5 h-3.5 rounded border flex items-center justify-center text-[8px] transition ${
-                      isChecked ? "bg-[#0038a8] border-[#0038a8] text-white" : "border-slate-300"
+                      isChecked ? "bg-brand-green border-brand-green text-white" : "border-slate-300"
                     }`}>
                       {isChecked && "✓"}
                     </span>
@@ -183,23 +183,23 @@ export default function PricingCalculator() {
         </div>
 
         {/* Right Side: Estimates Output */}
-        <div className="lg:col-span-4 bg-[#0038a8] text-white rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-sm min-h-[300px]">
+        <div className="lg:col-span-4 bg-brand-green text-white rounded-2xl p-6 flex flex-col justify-between space-y-6 shadow-sm min-h-[300px]">
           <div className="space-y-4">
             <div>
               <h4 className="font-extrabold text-sm mb-1 text-white">
                 Ước tính sơ bộ
               </h4>
-              <p className="text-[10px] text-blue-200 leading-relaxed font-medium">
+              <p className="text-[10px] text-emerald-100 leading-relaxed font-medium">
                 Giá này mang tính chất tham khảo dựa trên thông tin bạn cung cấp.
               </p>
             </div>
             
-            <div className="space-y-3 pt-2 text-xs font-medium text-blue-100">
-              <div className="flex justify-between pb-2.5 border-b border-blue-800/40">
+            <div className="space-y-3 pt-2 text-xs font-medium text-emerald-50">
+              <div className="flex justify-between pb-2.5 border-b border-emerald-800/20">
                 <span>Đơn giá:</span>
                 <span className="font-bold text-white">{formatCurrency(activeService.rate)}/m²</span>
               </div>
-              <div className="flex justify-between pb-2.5 border-b border-blue-800/40">
+              <div className="flex justify-between pb-2.5 border-b border-emerald-800/20">
                 <span>Diện tích:</span>
                 <span className="font-bold text-white">{area} m²</span>
               </div>
@@ -210,9 +210,9 @@ export default function PricingCalculator() {
             </div>
           </div>
 
-          <div className="space-y-4 pt-4 border-t border-blue-800/60">
+          <div className="space-y-4 pt-4 border-t border-emerald-800/30">
             <div className="text-center space-y-1.5">
-              <span className="text-[10px] uppercase font-bold text-blue-200 tracking-wider">
+              <span className="text-[10px] uppercase font-bold text-emerald-100 tracking-wider">
                 TỔNG CỘNG DỰ KIẾN
               </span>
               <div className="text-2xl sm:text-3xl font-black text-white">
@@ -223,7 +223,7 @@ export default function PricingCalculator() {
             <button
               type="button"
               onClick={handleScrollToForm}
-              className="w-full bg-white text-[#0038a8] hover:bg-slate-50 font-black py-3 rounded-xl text-xs transition duration-200 text-center"
+              className="w-full bg-white text-brand-green hover:bg-slate-50 font-black py-3 rounded-xl text-xs transition duration-200 text-center shadow-sm"
             >
               Nhận báo giá chi tiết
             </button>

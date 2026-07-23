@@ -8,11 +8,24 @@ export default function Footer() {
           
           {/* Column 1: Info */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2.5 shrink-0 mb-2">
-              <img src="/logo.png" alt="Vệ Sinh 247 Ánh Ngọc Logo" className="h-16 w-auto object-contain" />
-              <span className="text-xs sm:text-sm font-black tracking-wide text-brand-blue uppercase">
-                Vệ sinh nhà Ánh Ngọc 24/7
-              </span>
+            <Link href="/" className="flex items-center space-x-2.5 shrink-0 mb-2 select-none group">
+              <div className="flex items-center justify-center w-12 h-12 rounded-xl border-2 border-brand-green text-brand-green bg-white p-2 shadow-sm group-hover:scale-102 transition-transform">
+                <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5" />
+                  <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v6" />
+                  <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
+                  <path d="M8 14H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h12a4 4 0 0 0 4-4v-7" />
+                </svg>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-sm sm:text-base font-black tracking-tight text-slate-800 leading-none">
+                  TAPVU<span className="text-brand-green font-extrabold">247</span>
+                </span>
+                <div className="flex items-center space-x-1 mt-0.5">
+                  <span className="text-[9px] font-bold text-slate-500 leading-none uppercase tracking-wider">Home clean</span>
+                  <span className="bg-brand-green text-white text-[8px] font-black px-1 py-0.5 rounded leading-none">24/24</span>
+                </div>
+              </div>
             </Link>
             <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-xs">
               Đơn vị vệ sinh chuyên nghiệp hàng đầu tại các khu đô thị Vinhomes. Uy tín - Tận tâm - Sạch bong.
@@ -23,7 +36,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center hover:bg-brand-blue-hover transition-colors"
+                className="w-8 h-8 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-green-hover transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -34,7 +47,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-colors"
+                className="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-brand-green hover:text-white transition-colors"
                 aria-label="Messenger"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -51,22 +64,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
-                <Link href="/" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Trang chủ
                 </Link>
               </li>
               <li>
-                <Link href="/dich-vu" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/dich-vu" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Về chúng tôi
                 </Link>
               </li>
               <li>
-                <Link href="/dich-vu" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/dich-vu" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Dịch vụ chính
                 </Link>
               </li>
               <li>
-                <Link href="/bao-gia" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/bao-gia" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Bảng giá mới nhất
                 </Link>
               </li>
@@ -80,22 +93,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
-                <Link href="/bao-gia" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/bao-gia" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Chính sách bảo mật
                 </Link>
               </li>
               <li>
-                <Link href="/dich-vu" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/dich-vu" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Điều khoản dịch vụ
                 </Link>
               </li>
               <li>
-                <Link href="/dich-vu" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/dich-vu" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Câu hỏi thường gặp
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-brand-blue transition-colors text-slate-500 font-medium">
+                <Link href="/contact" className="hover:text-brand-green transition-colors text-slate-500 font-medium">
                   Liên hệ báo giá
                 </Link>
               </li>
@@ -119,7 +132,7 @@ export default function Footer() {
               />
               <button
                 type="button"
-                className="bg-brand-blue hover:bg-brand-blue-hover text-white p-2 rounded-lg transition-colors flex items-center justify-center shadow-sm"
+                className="bg-brand-green hover:bg-brand-green-hover text-white p-2 rounded-lg transition-colors flex items-center justify-center shadow-sm"
                 aria-label="Đăng ký email"
               >
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

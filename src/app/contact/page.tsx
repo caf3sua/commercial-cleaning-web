@@ -34,7 +34,7 @@ export default function ContactPage() {
       
       {/* 1. Header Intro Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-4 bg-white border-b border-slate-100">
-        <h1 className="text-3xl sm:text-5xl font-black text-brand-blue tracking-tight">
+        <h1 className="text-3xl sm:text-5xl font-black text-brand-green tracking-tight">
           Liên Hệ Với Chúng Tôi
         </h1>
         <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-medium">
@@ -57,17 +57,17 @@ export default function ContactPage() {
 
               {/* Hotline support */}
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-full bg-brand-blue text-white flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
                   <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                     HOTLINE HỖ TRỢ 24/7
                   </span>
-                  <a href="tel:0911976839" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-blue transition-colors">
+                  <a href="tel:0911976839" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-green transition-colors">
                     0911 976 839
                   </a>
-                  <a href="tel:0938129969" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-blue transition-colors">
+                  <a href="tel:0938129969" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-green transition-colors">
                     0938 129 969
                   </a>
                 </div>
@@ -75,14 +75,14 @@ export default function ContactPage() {
 
               {/* Email */}
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-full bg-brand-blue text-white flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
                   <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                     EMAIL VĂN PHÒNG
                   </span>
-                  <a href="mailto:info@anhngocvinhomes.vn" className="block text-sm sm:text-base font-bold text-slate-800 hover:text-brand-blue transition-colors">
+                  <a href="mailto:info@anhngocvinhomes.vn" className="block text-sm sm:text-base font-bold text-slate-800 hover:text-brand-green transition-colors">
                     info@anhngocvinhomes.vn
                   </a>
                 </div>
@@ -98,11 +98,11 @@ export default function ContactPage() {
                 {branches.map((branch, idx) => (
                   <div
                     key={idx}
-                    className="bg-blue-50/50 p-4.5 rounded-xl border border-slate-100 flex items-start space-x-3.5 hover:border-brand-blue/30 transition-colors"
+                    className="bg-brand-green-light/50 p-4.5 rounded-xl border border-slate-100 flex items-start space-x-3.5 hover:border-brand-green/30 transition-colors"
                   >
-                    <MapPin className="w-5 h-5 text-brand-blue shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
                     <div className="space-y-0.5">
-                      <span className="block font-bold text-brand-blue text-xs sm:text-sm">
+                      <span className="block font-bold text-brand-green text-xs sm:text-sm">
                         {branch.name}
                       </span>
                       <span className="block text-xs text-slate-500 leading-relaxed font-medium">
@@ -129,7 +129,7 @@ export default function ContactPage() {
           
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-slate-100 pb-4">
             <div className="space-y-1">
-              <span className="block text-[10px] font-bold text-brand-blue uppercase tracking-widest">
+              <span className="block text-[10px] font-bold text-brand-green uppercase tracking-widest">
                 BẢN ĐỒ
               </span>
               <h3 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">
@@ -180,13 +180,13 @@ export default function ContactPage() {
       </section>
 
       {/* 4. Bottom Hotline Banner */}
-      <section className="bg-brand-blue py-10">
+      <section className="bg-brand-green py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-white text-center md:text-left">
           <div className="space-y-1.5">
             <h4 className="text-lg sm:text-xl font-black">
               Bạn cần tư vấn trực tiếp ngay bây giờ?
             </h4>
-            <p className="text-blue-100 text-xs sm:text-sm font-medium">
+            <p className="text-green-100 text-xs sm:text-sm font-medium">
               Gọi ngay Hotline để được hỗ trợ và khảo sát miễn phí trong 15 phút.
             </p>
           </div>
@@ -194,7 +194,7 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full sm:w-auto">
             <a
               href="tel:0911976839"
-              className="flex items-center justify-center bg-white hover:bg-blue-50 text-brand-blue font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-colors"
+              className="flex items-center justify-center bg-white hover:bg-green-50 text-brand-green font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-colors"
             >
               <Phone className="w-4 h-4 mr-2" />
               0911 976 839

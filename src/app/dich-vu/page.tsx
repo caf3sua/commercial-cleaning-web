@@ -14,7 +14,7 @@ export default async function ServicesPage() {
     <div className="w-full bg-slate-50 min-h-screen">
       {/* 1. Page Header & Intro Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-4">
-        <div className="inline-flex items-center space-x-1 bg-blue-100/60 border border-brand-blue-border px-3 py-1.5 rounded-full text-brand-blue text-xs font-bold uppercase tracking-wider">
+        <div className="inline-flex items-center space-x-1 bg-brand-green-light/60 border border-brand-green-border px-3 py-1.5 rounded-full text-brand-green text-xs font-bold uppercase tracking-wider">
           <Sparkles className="w-3.5 h-3.5 mr-1" />
           GIẢI PHÁP LÀM SẠCH TOÀN DIỆN
         </div>
@@ -50,11 +50,11 @@ export default async function ServicesPage() {
 
                 {/* Card Body */}
                 <div className="p-5 space-y-2.5">
-                  <span className="block text-[10px] font-bold text-brand-blue uppercase tracking-widest">
+                  <span className="block text-[10px] font-bold text-brand-green uppercase tracking-widest">
                     {svc.category}
                   </span>
                   
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-blue transition-colors leading-snug">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-green transition-colors leading-snug">
                     <Link href={`/dich-vu/${svc.slug}`}>
                       {svc.title}
                     </Link>
@@ -70,7 +70,7 @@ export default async function ServicesPage() {
               <div className="px-5 pb-5 pt-3 border-t border-slate-50">
                 <Link
                   href={`/dich-vu/${svc.slug}`}
-                  className="text-xs font-bold text-brand-blue hover:text-brand-blue-hover flex items-center group/btn"
+                  className="text-xs font-bold text-brand-green hover:text-brand-green-hover flex items-center group/btn"
                 >
                   Xem chi tiết
                   <ArrowRight className="w-3.5 h-3.5 ml-1 transition-transform group-hover/btn:translate-x-1" />
@@ -83,12 +83,12 @@ export default async function ServicesPage() {
 
       {/* 3. Solid Royal Blue CTA Area */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="bg-brand-blue rounded-3xl text-white p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-brand-green rounded-3xl text-white p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3.5 max-w-xl text-center md:text-left">
             <h2 className="text-xl sm:text-3xl font-black">
               Bạn chưa tìm thấy dịch vụ <br className="hidden sm:inline" /> phù hợp?
             </h2>
-            <p className="text-blue-100 text-xs sm:text-sm leading-relaxed">
+            <p className="text-green-100 text-xs sm:text-sm leading-relaxed">
               Hãy liên hệ trực tiếp với chúng tôi để được tư vấn giải pháp vệ sinh tùy chỉnh theo yêu cầu riêng của bạn.
             </p>
           </div>
@@ -96,7 +96,7 @@ export default async function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <Link
               href="/bao-gia"
-              className="bg-white hover:bg-blue-50 text-brand-blue font-bold px-7 py-3 rounded-full text-xs sm:text-sm shadow-md text-center transition-colors"
+              className="bg-white hover:bg-green-50 text-brand-green font-bold px-7 py-3 rounded-full text-xs sm:text-sm shadow-md text-center transition-colors"
             >
               Yêu cầu báo giá
             </Link>

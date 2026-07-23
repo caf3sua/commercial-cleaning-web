@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a; /* Slate 900 */
+  --background: #f2f0eb; /* Neutral Warm cream */
+  --foreground: rgba(0, 0, 0, 0.87); /* Text Black */
 }
 
 @theme {
-  --color-brand-blue: #0038a8;
-  --color-brand-blue-hover: #002d96;
-  --color-brand-blue-light: #eff6ff; /* Blue 50 */
-  --color-brand-blue-border: #dbeafe; /* Blue 100 */
-  --color-brand-text: #0f172a;
+  --color-brand-green: #00754A; /* Green Accent */
+  --color-brand-green-hover: #006241; /* Starbucks Green */
+  --color-brand-green-light: #d4e9e2; /* Green Light */
+  --color-brand-green-border: rgba(0, 117, 74, 0.2);
+  --color-brand-text: rgba(0, 0, 0, 0.87);
   
-  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: var(--font-be-vietnam-pro), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html {

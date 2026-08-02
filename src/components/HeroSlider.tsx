@@ -42,7 +42,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative w-full aspect-[21/9] sm:aspect-[24/9] md:aspect-[32/10] overflow-hidden bg-slate-900 group">
+    <div className="relative w-full h-screen min-h-[500px] overflow-hidden bg-slate-900 group">
       <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}

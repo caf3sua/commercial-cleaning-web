@@ -24,7 +24,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 // Custom line art vector SVG icons to match the screenshot
 const VacuumIcon = () => (
-  <svg className="w-12 h-12 text-brand-green transition-transform group-hover:scale-105 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-8 h-8 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M19 17v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2" />
     <circle cx="8" cy="18" r="2" />
     <circle cx="16" cy="18" r="2" />
@@ -34,7 +34,7 @@ const VacuumIcon = () => (
 );
 
 const IndustrialIcon = () => (
-  <svg className="w-12 h-12 text-brand-green transition-transform group-hover:scale-105 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-8 h-8 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <rect x="3" y="8" width="6" height="14" rx="1" />
     <rect x="11" y="3" width="10" height="19" rx="1" />
     <line x1="6" y1="12" x2="6" y2="12.01" />
@@ -49,7 +49,7 @@ const IndustrialIcon = () => (
 );
 
 const FloorPolishingIcon = () => (
-  <svg className="w-12 h-12 text-brand-green transition-transform group-hover:scale-105 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-8 h-8 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 3v12" />
     <path d="M7 15h10a1 1 0 0 1 1 1v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-3a1 1 0 0 1 1-1z" />
     <circle cx="12" cy="7" r="3" />
@@ -58,7 +58,7 @@ const FloorPolishingIcon = () => (
 );
 
 const HospitalIcon = () => (
-  <svg className="w-12 h-12 text-brand-green transition-transform group-hover:scale-105 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-8 h-8 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M18 22V8a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14" />
     <path d="M12 10v6" />
     <path d="M10 13h4" />
@@ -68,7 +68,7 @@ const HospitalIcon = () => (
 );
 
 const OfficeIcon = () => (
-  <svg className="w-12 h-12 text-brand-green transition-transform group-hover:scale-105 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-8 h-8 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <rect x="3" y="11" width="18" height="11" rx="2" />
     <path d="M9 11V6a3 3 0 0 1 6 0v5" />
     <line x1="6" y1="15" x2="18" y2="15" />
@@ -77,7 +77,7 @@ const OfficeIcon = () => (
 );
 
 const HourlyIcon = () => (
-  <svg className="w-12 h-12 text-brand-green transition-transform group-hover:scale-105 duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-8 h-8 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <rect x="2" y="8" width="12" height="9" rx="1" />
     <circle cx="6" cy="17" r="1.5" />
     <circle cx="10" cy="17" r="1.5" />
@@ -108,41 +108,70 @@ export default async function Page() {
             
             {/* Left Column: 6-Card Services Grid */}
             <div className={styles.servicesCardGrid}>
-              <Link href="/dich-vu/don-dep-theo-gio-thang" className={`${styles.serviceLineCard} group`}>
-                <div className={styles.serviceLineIcon}>
+              <Link href="/dich-vu/don-dep-theo-gio-thang" className={`${styles.serviceCardPremium} group`}>
+                <div className={styles.serviceCardIconWrapper}>
                   <VacuumIcon />
                 </div>
-                <span className={styles.serviceLineTitle}>Vệ sinh nhà ở</span>
+                <h4 className={styles.serviceCardTitle}>Vệ sinh nhà ở</h4>
+                <p className={styles.serviceCardDesc}>Sạch sâu từng góc nhỏ, an tâm tận hưởng.</p>
+                <div className={styles.serviceCardFooter}>
+                  Khám phá <ArrowRight size={14} strokeWidth={3} />
+                </div>
               </Link>
-              <Link href="/dich-vu/ve-sinh-cong-nghiep" className={`${styles.serviceLineCard} group`}>
-                <div className={styles.serviceLineIcon}>
+
+              <Link href="/dich-vu/ve-sinh-cong-nghiep" className={`${styles.serviceCardPremium} group`}>
+                <div className={styles.serviceCardIconWrapper}>
                   <IndustrialIcon />
                 </div>
-                <span className={styles.serviceLineTitle}>Vệ sinh công nghiệp</span>
+                <h4 className={styles.serviceCardTitle}>Vệ sinh công nghiệp</h4>
+                <p className={styles.serviceCardDesc}>Quy trình chuẩn mực, máy móc hiện đại.</p>
+                <div className={styles.serviceCardFooter}>
+                  Khám phá <ArrowRight size={14} strokeWidth={3} />
+                </div>
               </Link>
-              <Link href="/dich-vu/phu-bong-san" className={`${styles.serviceLineCard} group`}>
-                <div className={styles.serviceLineIcon}>
+
+              <Link href="/dich-vu/phu-bong-san" className={`${styles.serviceCardPremium} group`}>
+                <div className={styles.serviceCardIconWrapper}>
                   <FloorPolishingIcon />
                 </div>
-                <span className={styles.serviceLineTitle}>Đánh bóng sàn</span>
+                <h4 className={styles.serviceCardTitle}>Đánh bóng sàn</h4>
+                <p className={styles.serviceCardDesc}>Phục hồi độ sáng bóng như mới.</p>
+                <div className={styles.serviceCardFooter}>
+                  Khám phá <ArrowRight size={14} strokeWidth={3} />
+                </div>
               </Link>
-              <Link href="/dich-vu/ve-sinh-cong-nghiep" className={`${styles.serviceLineCard} group`}>
-                <div className={styles.serviceLineIcon}>
+
+              <Link href="/dich-vu/ve-sinh-cong-nghiep" className={`${styles.serviceCardPremium} group`}>
+                <div className={styles.serviceCardIconWrapper}>
                   <HospitalIcon />
                 </div>
-                <span className={styles.serviceLineTitle}>Vệ sinh bệnh viện</span>
+                <h4 className={styles.serviceCardTitle}>Vệ sinh bệnh viện</h4>
+                <p className={styles.serviceCardDesc}>Tiệt trùng y tế, đảm bảo an toàn cao nhất.</p>
+                <div className={styles.serviceCardFooter}>
+                  Khám phá <ArrowRight size={14} strokeWidth={3} />
+                </div>
               </Link>
-              <Link href="/dich-vu/ve-sinh-cong-nghiep" className={`${styles.serviceLineCard} group`}>
-                <div className={styles.serviceLineIcon}>
+
+              <Link href="/dich-vu/ve-sinh-cong-nghiep" className={`${styles.serviceCardPremium} group`}>
+                <div className={styles.serviceCardIconWrapper}>
                   <OfficeIcon />
                 </div>
-                <span className={styles.serviceLineTitle}>Vệ sinh văn phòng</span>
+                <h4 className={styles.serviceCardTitle}>Vệ sinh văn phòng</h4>
+                <p className={styles.serviceCardDesc}>Môi trường làm việc năng động, chuyên nghiệp.</p>
+                <div className={styles.serviceCardFooter}>
+                  Khám phá <ArrowRight size={14} strokeWidth={3} />
+                </div>
               </Link>
-              <Link href="/dich-vu/don-dep-theo-gio-thang" className={`${styles.serviceLineCard} group`}>
-                <div className={styles.serviceLineIcon}>
+
+              <Link href="/dich-vu/don-dep-theo-gio-thang" className={`${styles.serviceCardPremium} group`}>
+                <div className={styles.serviceCardIconWrapper}>
                   <HourlyIcon />
                 </div>
-                <span className={styles.serviceLineTitle}>Vệ sinh theo giờ</span>
+                <h4 className={styles.serviceCardTitle}>Vệ sinh theo giờ</h4>
+                <p className={styles.serviceCardDesc}>Tiết kiệm, linh hoạt và đáp ứng nhanh.</p>
+                <div className={styles.serviceCardFooter}>
+                  Khám phá <ArrowRight size={14} strokeWidth={3} />
+                </div>
               </Link>
             </div>
 

@@ -149,21 +149,42 @@ export default async function Page() {
             {/* Right Column: About Us Copy */}
             <div className={styles.aboutTextContent}>
               <h2 className={styles.aboutHeading}>Về chúng tôi</h2>
+              
+              <h3 className="text-md sm:text-lg font-bold text-brand-green leading-snug">
+                Hơn 10 năm kinh nghiệm – Tận tâm trong từng không gian sống.
+              </h3>
+              
               <p className={styles.aboutParagraph}>
-                Là đơn vị có thâm niên trong ngành vệ sinh công nghiệp, chúng tôi tích lũy
-                được nhiều kinh nghiệm khi thi công dịch vụ, với những kinh nghiệm đó giúp
-                chúng tôi rút ngắn được thời gian thi công cũng như công đoạn vì vậy giá thành
-                luôn được đảm bảo tốt nhất.
+                Suốt hơn 10 năm gắn bó với nghề vệ sinh và làm sạch, chúng tôi luôn tâm niệm rằng: một không gian sạch không chỉ đẹp hơn, mà còn mang đến sức khỏe, sự bình yên và hạnh phúc cho mỗi gia đình.
               </p>
+              
               <p className={styles.aboutParagraph}>
-                Với đội ngũ nhân viên kỹ thuật dày dạn kinh nghiệm, trải dài khắp vùng miền
-                và có thể huy động số lượng lớn nhân công cùng một lúc, chúng tôi thực hiện
-                công việc trong thời gian rất ngắn. Bên cạnh đó, chúng tôi sử dụng các công cụ
-                thiết bị vệ sinh hiện đại cùng với các sản phẩm hoạt chất tẩy rửa an toàn sẽ
-                giúp bề mặt của công trình trở nên sạch như mới.
+                Với phương châm <strong>&quot;Làm bằng cái tâm – Giữ trọn niềm tin&quot;</strong>, Dọn Dẹp Vệ Sinh 247 – Ánh Ngọc Vinhomes không ngừng nâng cao chất lượng dịch vụ, đầu tư máy móc hiện đại và đào tạo đội ngũ chuyên nghiệp để mang đến sự hài lòng cho từng khách hàng.
               </p>
+
+              <div className="space-y-1.5 my-1">
+                <p className="font-bold text-slate-800 text-xs sm:text-sm">Chúng tôi cung cấp các dịch vụ:</p>
+                <ul className="list-disc pl-5 text-slate-600 text-xs sm:text-sm space-y-1">
+                  <li>Vệ sinh công nghiệp cho nhà ở, văn phòng, cửa hàng, công trình.</li>
+                  <li>Dọn dẹp nhà ở, căn hộ, biệt thự theo giờ hoặc trọn gói.</li>
+                  <li>Dọn dẹp chuyên sâu sau xây dựng, trước và sau khi chuyển nhà.</li>
+                  <li>Giặt thảm, đệm, sofa, ghế, rèm cửa bằng công nghệ hiện đại.</li>
+                  <li>Phun diệt muỗi và côn trùng, bảo vệ sức khỏe gia đình.</li>
+                  <li>Đánh bóng, phủ bóng sàn gỗ, sàn gạch, khôi phục vẻ đẹp như mới.</li>
+                  <li>Cùng nhiều giải pháp làm sạch theo yêu cầu.</li>
+                </ul>
+              </div>
+
+              <p className={styles.aboutParagraph}>
+                Điều khiến khách hàng quay trở lại với chúng tôi không chỉ là dịch vụ sạch, mà còn là sự tận tâm, đúng hẹn, trung thực và trách nhiệm trong từng công việc. Chúng tôi luôn coi mỗi ngôi nhà, mỗi văn phòng của khách hàng như chính không gian của gia đình mình để chăm chút từng góc nhỏ.
+              </p>
+              
+              <p className={styles.aboutParagraph}>
+                Dọn Dẹp Vệ Sinh 247 – Ánh Ngọc Vinhomes xin gửi lời cảm ơn chân thành đến tất cả quý khách hàng đã tin tưởng và đồng hành suốt nhiều năm qua. Chúng tôi cam kết sẽ tiếp tục giữ vững uy tín, làm việc bằng cả trái tim để mang đến những không gian sạch hơn – đẹp hơn – an toàn hơn, góp phần nâng cao chất lượng cuộc sống của mỗi gia đình.
+              </p>
+
               <Link href="/dich-vu" className={styles.aboutBtnSolid}>
-                Xem giới thiệu chi tiết
+                Khám phá dịch vụ chi tiết
               </Link>
             </div>
 
@@ -457,7 +478,7 @@ export default async function Page() {
       </section>
 
       {/* 5. CONTACT — diptych: form / map + details */}
-      <section id="booking-section" className={styles.section} style={{ scrollMarginTop: "4rem" }}>
+      <section id="booking-section" className={styles.section} style={{ scrollMarginTop: "5rem" }}>
         <div className={styles.container}>
           <div className={styles.contactGrid}>
             <Reveal style={{ "--i": 0 } as CSSProperties} className={styles.reveal}>

@@ -8,28 +8,17 @@ export default function Footer() {
           
           {/* Column 1: Info */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2.5 shrink-0 mb-2 select-none group">
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl border-2 border-brand-green text-brand-green bg-white p-2 shadow-sm group-hover:scale-102 transition-transform">
-                <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5" />
-                  <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v6" />
-                  <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
-                  <path d="M8 14H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h12a4 4 0 0 0 4-4v-7" />
-                </svg>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-sm sm:text-base font-black tracking-tight text-slate-800 leading-none">
-                  TAPVU<span className="text-brand-green font-extrabold">247</span>
-                </span>
-                <div className="flex items-center space-x-1 mt-0.5">
-                  <span className="text-[9px] font-bold text-slate-500 leading-none uppercase tracking-wider">Home clean</span>
-                  <span className="bg-brand-green text-white text-[8px] font-black px-1 py-0.5 rounded leading-none">24/24</span>
-                </div>
-              </div>
+            <Link href="/" className="flex items-center shrink-0 mb-2 select-none group">
+              <img
+                src="/logo_v2.png"
+                alt="Vệ sinh 247 Ánh Dương"
+                className="h-16 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              />
             </Link>
-            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-xs">
-              Đơn vị vệ sinh chuyên nghiệp hàng đầu tại các khu đô thị Vinhomes. Uy tín - Tận tâm - Sạch bong.
-            </p>
+            <div className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-xs">
+              <p className="font-bold text-slate-700">Dọn Dẹp Vệ Sinh 247 – Ánh Ngọc Vinhomes</p>
+              <p className="mt-1">Sạch từ tâm – Tận tâm phục vụ – Uy tín tạo niềm tin.</p>
+            </div>
             {/* Social Icons */}
             <div className="flex items-center space-x-3.5 pt-2">
               <a

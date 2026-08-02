@@ -20,26 +20,21 @@ export default function Header() {
   return (
     <header className="w-full bg-white border-b border-slate-100 z-50 sticky top-0 shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Custom SVG Logo */}
-          <Link href="/" className="flex items-center space-x-2.5 shrink-0 py-1 select-none group">
-            <div className="flex items-center justify-center w-10 h-10 rounded-xl border-2 border-brand-green text-brand-green bg-white p-1.5 shadow-sm group-hover:scale-102 transition-transform">
-              <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                {/* Hand Outline */}
-                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5" />
-                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v6" />
-                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
-                <path d="M8 14H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h12a4 4 0 0 0 4-4v-7" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm sm:text-base font-black tracking-tight text-slate-800 leading-none">
-                TAPVU<span className="text-brand-green font-extrabold">247</span>
+        <div className="flex justify-between items-center h-28">
+          {/* Brand Logo */}
+          <Link href="/" className="flex items-center space-x-4 shrink-0 py-1 select-none group">
+            <img
+              src="/logo_v2.png"
+              alt="Vệ sinh 247 Ánh Ngọc Vinhomes"
+              className="h-24 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+            />
+            <div className="hidden sm:flex flex-col text-left">
+              <span className="text-sm sm:text-base font-extrabold text-slate-600 uppercase tracking-wider leading-none">
+                Dọn Dẹp Vệ Sinh 247
               </span>
-              <div className="flex items-center space-x-1 mt-0.5">
-                <span className="text-[9px] font-bold text-slate-500 leading-none uppercase tracking-wider">Home clean</span>
-                <span className="bg-brand-green text-white text-[8px] font-black px-1 py-0.5 rounded leading-none">24/24</span>
-              </div>
+              <span className="text-2xl sm:text-3xl font-black tracking-tight text-brand-green leading-tight mt-1.5 drop-shadow-sm">
+                Ánh Ngọc Vinhomes
+              </span>
             </div>
           </Link>
 

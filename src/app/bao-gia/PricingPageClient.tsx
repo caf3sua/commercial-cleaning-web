@@ -65,7 +65,7 @@ export default function PricingPageClient() {
             Bảng Giá Dịch Vụ Minh Bạch
           </h1>
           <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-medium">
-            Chúng tôi cung cấp giải pháp vệ sinh chuyên nghiệp chuẩn Vinhomes với chi phí tối ưu. Sử dụng công cụ dưới đây để nhận ước tính ngay lập tức.
+            Chúng tôi cung cấp giải pháp vệ sinh chuyên nghiệp chuẩn Vinhomes với chi phí tối ưu.
           </p>
           <div className="flex justify-center items-center gap-3 pt-2">
             <span className="inline-flex items-center space-x-1 px-3 py-1 rounded-full bg-[#eff6ff] text-[#0038a8] border border-[#dbeafe] text-[10px] font-extrabold uppercase tracking-wider">
@@ -78,84 +78,7 @@ export default function PricingPageClient() {
         </motion.div>
       </section>
 
-      {/* 2. Pricing Calculator Section */}
-      <motion.section
-        initial="hidden"
-        animate="visible"
-        variants={scaleIn}
-        className="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
-      >
-        <PricingCalculator />
-      </motion.section>
 
-      {/* 3. Detailed Pricing Table */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={fadeInUp}
-        className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
-      >
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-black text-slate-800">
-            Bảng giá niêm yết chi tiết
-          </h2>
-        </div>
-
-        <div className="overflow-x-auto rounded-2xl border border-slate-200/60 shadow-sm bg-white">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-[#eff6ff]/70 border-b border-slate-200 text-[#0038a8] text-xs font-bold uppercase tracking-wider">
-                <th className="py-4 px-6">Dịch vụ</th>
-                <th className="py-4 px-6 text-center">Đơn vị</th>
-                <th className="py-4 px-6 text-center">Đơn giá (VNĐ)</th>
-                <th className="py-4 px-6">Ghi chú</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100 text-slate-700 text-xs sm:text-sm font-medium">
-              <tr className="hover:bg-slate-50/50 transition-colors">
-                <td className="py-4 px-6 font-bold text-slate-800">Vệ sinh Căn hộ 1PN (Vinhomes)</td>
-                <td className="py-4 px-6 text-center text-slate-500">Gói</td>
-                <td className="py-4 px-6 text-center font-extrabold text-[#0038a8]">600.000</td>
-                <td className="py-4 px-6 text-slate-500">Vệ sinh cơ bản 4h</td>
-              </tr>
-              <tr className="hover:bg-slate-50/50 transition-colors">
-                <td className="py-4 px-6 font-bold text-slate-800">Vệ sinh Căn hộ 2PN (Vinhomes)</td>
-                <td className="py-4 px-6 text-center text-slate-500">Gói</td>
-                <td className="py-4 px-6 text-center font-extrabold text-[#0038a8]">900.000</td>
-                <td className="py-4 px-6 text-slate-500">Vệ sinh cơ bản 6h</td>
-              </tr>
-              <tr className="hover:bg-slate-50/50 transition-colors">
-                <td className="py-4 px-6 font-bold text-slate-800">Vệ sinh Căn hộ 3PN (Vinhomes)</td>
-                <td className="py-4 px-6 text-center text-slate-500">Gói</td>
-                <td className="py-4 px-6 text-center font-extrabold text-[#0038a8]">1.200.000</td>
-                <td className="py-4 px-6 text-slate-500">Nhóm 2 nhân viên</td>
-              </tr>
-              <tr className="hover:bg-slate-50/50 transition-colors">
-                <td className="py-4 px-6 font-bold text-slate-800">Giặt ghế Sofa / Nệm</td>
-                <td className="py-4 px-6 text-center text-slate-500">Chiếc</td>
-                <td className="py-4 px-6 text-center font-extrabold text-[#0038a8]">250.000 - 450.000</td>
-                <td className="py-4 px-6 text-slate-500">Công nghệ phun hút hơi nước nóng</td>
-              </tr>
-              <tr className="hover:bg-slate-50/50 transition-colors">
-                <td className="py-4 px-6 font-bold text-slate-800">Vệ sinh Máy lạnh (Treo tường)</td>
-                <td className="py-4 px-6 text-center text-slate-500">Bộ</td>
-                <td className="py-4 px-6 text-center font-extrabold text-[#0038a8]">200.000</td>
-                <td className="py-4 px-6 text-slate-500">Bao gồm nạp gas bổ sung</td>
-              </tr>
-              <tr className="hover:bg-slate-50/50 transition-colors">
-                <td className="py-4 px-6 font-bold text-slate-800">Vệ sinh công nghiệp sau xây dựng</td>
-                <td className="py-4 px-6 text-center text-slate-500">m²</td>
-                <td className="py-4 px-6 text-center font-extrabold text-[#0038a8]">15.000 - 25.000</td>
-                <td className="py-4 px-6 text-slate-500">Tùy theo hiện trạng thực tế</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="text-[10px] text-slate-400 font-bold mt-4 leading-relaxed italic">
-          * Giá trên chưa bao gồm thuế GTGT (VAT 10%). Đối với diện tích lớn trên 500m², quý khách vui lòng liên hệ trực tiếp để có giá ưu đãi.
-        </p>
-      </motion.section>
 
       {/* 4. Survey Request Form Section */}
       <section id="request-quote-section" className="py-16 bg-[#eff6ff]/35 border-t border-slate-100">

@@ -6,6 +6,7 @@ import { getServices, getLatestNews, getCompanyInfo } from "@/services/dataServi
 import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 import HeroSlider from "@/components/HeroSlider";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import styles from "./page.module.css";
 
 const fraunces = Fraunces({
@@ -335,9 +336,9 @@ export default async function Page() {
             {/* Left Column: 2 features */}
             <div className={styles.benefitsSideCol}>
               {/* Feature 1: Sạch sẽ */}
-              <div className={styles.benefitItem}>
+              <div className={`${styles.benefitItem} ${styles.benefitItemLeft}`}>
                 <div className={styles.benefitIconWrapper}>
-                  <svg className="w-10 h-10 text-brand-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-10 h-10 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M6 3h12l4 6-10 13L2 9z" />
                     <path d="M11 3 8 9l4 13 4-13-3-6" />
                     <path d="M2 9h20" />
@@ -350,9 +351,9 @@ export default async function Page() {
               </div>
 
               {/* Feature 2: Bảo hiểm */}
-              <div className={styles.benefitItem}>
+              <div className={`${styles.benefitItem} ${styles.benefitItemLeft}`}>
                 <div className={styles.benefitIconWrapper}>
-                  <svg className="w-10 h-10 text-brand-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-10 h-10 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2v20M2 12a10 10 0 0 1 20 0Z" />
                     <path d="M12 18.5a1.5 1.5 0 0 1 3 0v.5" />
                   </svg>
@@ -372,9 +373,9 @@ export default async function Page() {
             {/* Right Column: 2 features */}
             <div className={styles.benefitsSideCol}>
               {/* Feature 3: Công nghệ hàng đầu */}
-              <div className={styles.benefitItem}>
+              <div className={`${styles.benefitItem} ${styles.benefitItemRight}`}>
                 <div className={styles.benefitIconWrapper}>
-                  <svg className="w-10 h-10 text-brand-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-10 h-10 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                     <path d="M9 22V12h6v10" />
                     <path d="M12 5a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3 3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z" />
@@ -387,9 +388,9 @@ export default async function Page() {
               </div>
 
               {/* Feature 4: Chuyên nghiệp, uy tín */}
-              <div className={styles.benefitItem}>
+              <div className={`${styles.benefitItem} ${styles.benefitItemRight}`}>
                 <div className={styles.benefitIconWrapper}>
-                  <svg className="w-10 h-10 text-brand-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-10 h-10 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="7" r="4" />
                     <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
                     <path d="M8 11h8" />
@@ -421,7 +422,9 @@ export default async function Page() {
             
             {/* Stat 1 */}
             <div className={styles.statsItem}>
-              <span className={styles.statsNumber}>295</span>
+              <span className={styles.statsNumber}>
+                <AnimatedCounter value={295} />
+              </span>
               <span className={styles.statsLabel}>CHỦ NHÀ ĐÃ NGHIỆM THU</span>
               {/* Divider line on the right */}
               <div className={styles.statsVerticalLine} style={{ right: '0%' }}>
@@ -431,7 +434,9 @@ export default async function Page() {
 
             {/* Stat 2 */}
             <div className={styles.statsItem}>
-              <span className={styles.statsNumber}>400</span>
+              <span className={styles.statsNumber}>
+                <AnimatedCounter value={400} />+
+              </span>
               <span className={styles.statsLabel}>KHÁCH HÀNG HÀI LÒNG</span>
               {/* Divider line on the right */}
               <div className={styles.statsVerticalLine} style={{ right: '0%' }}>
@@ -441,7 +446,9 @@ export default async function Page() {
 
             {/* Stat 3 */}
             <div className={styles.statsItem}>
-              <span className={styles.statsNumber}>527</span>
+              <span className={styles.statsNumber}>
+                <AnimatedCounter value={527} />
+              </span>
               <span className={styles.statsLabel}>DỰ ÁN ĐÃ HOÀN THÀNH</span>
               {/* Divider line on the right */}
               <div className={styles.statsVerticalLine} style={{ right: '0%' }}>
@@ -451,7 +458,9 @@ export default async function Page() {
 
             {/* Stat 4 */}
             <div className={styles.statsItem}>
-              <span className={styles.statsNumber}>105</span>
+              <span className={styles.statsNumber}>
+                <AnimatedCounter value={105} />
+              </span>
               <span className={styles.statsLabel}>ĐỊA ĐIỂM ĐÃ LÀM SẠCH</span>
               {/* Divider line on the right (far right edge) */}
               <div className={styles.statsVerticalLine} style={{ right: '0%' }}>

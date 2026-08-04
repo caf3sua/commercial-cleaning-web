@@ -101,11 +101,11 @@ export default function Header() {
             })}
             <div className="pt-3 px-4 border-t border-slate-100 mt-2">
               <a
-                href="tel:0911976839"
+                href="tel:0938129969"
                 onClick={() => setIsOpen(false)}
                 className="w-full flex items-center justify-center bg-brand-green text-white font-bold py-2.5 rounded-full text-xs shadow-sm hover:bg-brand-green-hover transition-colors"
               >
-                Hotline: 0911 976 839
+                Hotline: 0938 129 969 / 0911 976 839
               </a>
             </div>
           </div>

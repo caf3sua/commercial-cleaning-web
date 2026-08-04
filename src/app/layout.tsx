@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Vệ Sinh 247 - Ánh Ngọc Vinhomes | Dịch Vụ Vệ Sinh Công Nghiệp Uy Tín",
-  description: "Dọn Dẹp Vệ Sinh 247 – Ánh Ngọc Vinhomes. Sạch từ tâm – Tận tâm phục vụ – Uy tín tạo niềm tin. Chuyên cung cấp dịch vụ vệ sinh công nghiệp, diệt muỗi gián, giặt ghế sofa thảm, dọn dẹp theo giờ tại Vinhomes. Hotline: 0911.976.839",
+  description: "Dọn Dẹp Vệ Sinh 247 – Ánh Ngọc Vinhomes. Sạch từ tâm – Tận tâm phục vụ – Uy tín tạo niềm tin. Chuyên cung cấp dịch vụ vệ sinh công nghiệp, diệt muỗi gián, giặt ghế sofa thảm, dọn dẹp theo giờ tại Vinhomes. Hotline: 0938.129.969 - 0911.976.839",
   keywords: ["vệ sinh công nghiệp", "giúp việc theo giờ", "diệt côn trùng", "giặt sofa", "vệ sinh vinhomes", "ánh ngọc vinhomes", "vệ sinh 247"],
 };
 

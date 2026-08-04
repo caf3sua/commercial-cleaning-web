@@ -109,7 +109,8 @@ export default function PricingPageClient() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Hotline tư vấn 24/7</p>
-                    <p className="text-sm font-black text-[#0038a8]">0911 976 839</p>
+                    <a href="tel:0938129969" className="block text-sm font-black text-[#0038a8] hover:underline">0938 129 969</a>
+                    <a href="tel:0911976839" className="block text-sm font-black text-[#0038a8] hover:underline">0911 976 839</a>
                   </div>
                 </div>
                 

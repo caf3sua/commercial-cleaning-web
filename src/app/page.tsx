@@ -231,7 +231,7 @@ export default async function Page() {
               <p className={styles.ctaBarSub}>Cách nhanh nhất, vui lòng liên hệ trực tiếp với tư vấn viên qua một trong các kênh sau:</p>
             </div>
             <div className={styles.ctaBarChannels}>
-              <a href="https://zalo.me/0969999295" target="_blank" rel="noopener noreferrer" className={styles.ctaBarLink}>
+              <a href="https://zalo.me/0938129969" target="_blank" rel="noopener noreferrer" className={styles.ctaBarLink}>
                 <div className={styles.ctaBarIconCircle}>
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                     <path d="M12.2 2C6.7 2 2.2 6.5 2.2 12c0 1.9.5 3.7 1.5 5.2l-1.3 4.8 5-.1c1.4.7 3.1 1.1 4.8 1.1 5.5 0 10-4.5 10-10S17.7 2 12.2 2zm3.3 12.9c-.2.5-.9.9-1.2.9-.3 0-.6-.1-.8-.2-.3-.1-1.3-.5-2.5-1.5-1-1-1.6-2.1-1.8-2.5-.2-.4.1-.7.4-1 .2-.2.5-.5.7-.7.2-.2.3-.4.4-.6.1-.2 0-.4-.1-.6l-.7-1.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.5-.3z"/>
@@ -239,7 +239,7 @@ export default async function Page() {
                 </div>
                 <span>Chat Zalo</span>
               </a>
-              <a href="https://m.me/0969999295" target="_blank" rel="noopener noreferrer" className={styles.ctaBarLink}>
+              <a href="https://m.me/0938129969" target="_blank" rel="noopener noreferrer" className={styles.ctaBarLink}>
                 <div className={styles.ctaBarIconCircle}>
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                     <path d="M12 2C6.5 2 2 6.1 2 11.2c0 2.9 1.4 5.5 3.7 7.1V22c0 .2.3.4.5.3l3.5-2.3c.7.2 1.5.3 2.3.3 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1.2 11.8l-2.1-2.2-4.1 2.2 4.5-4.8 2.1 2.2 4.1-2.2-4.5 4.8z"/>
@@ -247,12 +247,19 @@ export default async function Page() {
                 </div>
                 <span>Chat Messenger</span>
               </a>
-              <a href="tel:0969999295" className={styles.ctaBarLink}>
+              <div className={styles.ctaBarLink}>
                 <div className={styles.ctaBarIconCircle}>
                   <Phone className="w-5 h-5" />
                 </div>
-                <span>0969999295</span>
-              </a>
+                <div className="flex flex-col text-left leading-snug">
+                  <a href="tel:0938129969" className="hover:opacity-80 transition-opacity">
+                    0938 129 969
+                  </a>
+                  <a href="tel:0911976839" className="hover:opacity-80 transition-opacity">
+                    0911 976 839
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -542,7 +549,7 @@ export default async function Page() {
                   <div>
                     <span className={styles.detailLabel}>Văn phòng</span>
                     <span className={styles.detailValue}>
-                      The Landmark, Vinhomes Central Park, Bình Thạnh, TP.HCM
+                      Toà P3, KĐT Vinhomes OCP Gia Lâm, Hà Nội
                     </span>
                   </div>
                 </div>
@@ -550,9 +557,14 @@ export default async function Page() {
                   <Phone size={18} className={styles.detailIcon} />
                   <div>
                     <span className={styles.detailLabel}>Hotline</span>
-                    <a href="tel:0911976839" className={styles.hotline}>
-                      0911976839
-                    </a>
+                    <div className="flex flex-col">
+                      <a href="tel:0938129969" className={styles.hotline}>
+                        0938 129 969
+                      </a>
+                      <a href="tel:0911976839" className={styles.hotline}>
+                        0911 976 839
+                      </a>
+                    </div>
                     <span className={styles.detailValue} style={{ display: "block" }}>
                       Hỗ trợ 24/7
                     </span>

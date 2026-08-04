@@ -150,18 +150,18 @@ export default async function NewsDetailPage({ params }: PageProps) {
                 </p>
                 <div className="space-y-2 pt-2 border-t border-slate-800">
                   <a
-                    href="tel:0911976839"
-                    className="flex items-center text-brand-green hover:text-white font-black text-sm"
-                  >
-                    <Phone className="w-4 h-4 mr-2" />
-                    0911.976.839
-                  </a>
-                  <a
                     href="tel:0938129969"
                     className="flex items-center text-brand-green hover:text-white font-black text-sm"
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     0938.129.969
+                  </a>
+                  <a
+                    href="tel:0911976839"
+                    className="flex items-center text-brand-green hover:text-white font-black text-sm"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    0911.976.839
                   </a>
                 </div>
               </div>

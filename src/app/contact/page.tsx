@@ -5,28 +5,32 @@ import ContactForm from "@/components/ContactForm";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export default function ContactPage() {
-  const [activeMap, setActiveMap] = useState<"central" | "grand">("central");
+  const [activeMap, setActiveMap] = useState<"ocean" | "smart">("ocean");
 
   const branches = [
     {
-      name: "Cơ sở Vinhomes Central Park",
-      address: "720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, TP.HCM",
+      name: "CS1: Vinhomes Ocean Park",
+      address: "Toà P3, KĐT Vinhomes OCP Gia Lâm, Hà Nội",
     },
     {
-      name: "Cơ sở Vinhomes Grand Park",
-      address: "Nguyễn Xiển, Long Thạnh Mỹ, Quận 9, TP. Thủ Đức",
+      name: "CS2: Vinhomes Smart City",
+      address: "Toà S106 KĐT Vinhomes SmartCity, Nam Từ Liêm, Hà Nội",
     },
     {
-      name: "Cơ sở Vinhomes Golden River",
-      address: "02 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP.HCM",
+      name: "CS3: Cơ sở Hà Đông",
+      address: "KĐT Kiến Hưng, phường Kiến Hưng, Thành phố Hà Nội",
+    },
+    {
+      name: "CS4: Cơ sở Thanh Xuân",
+      address: "Nguyễn Trãi, Thanh Xuân, Hà Nội",
     },
   ];
 
   const mapUrls = {
-    central:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1265882315757!2d106.71960257570414!3d10.791834258721617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f8f30975%3A0x261ad44deab0c732!2zVmluaG9tZXMgQ2VudHJhbCBQYXJr!5e0!3m2!1svi!2s!4v1721400000000!5m2!1svi!2s",
-    grand:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4908027209703!2d106.83737527570487!3d10.850220657424694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175271a073f15eb%3A0x6ec0c5b3ab371727!2zVmluaG9tZXMgR3JhbmQgUGFyaw!5e0!3m2!1svi!2s!4v1721400000000!5m2!1svi!2s",
+    ocean:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.1099684351336!2d105.93774847602058!3d20.988225089166922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9db7120df0f%3A0x7d67cfb42e61a6b0!2sVinhomes%20Ocean%20Park!5e0!3m2!1svi!2s!4v1721400000000!5m2!1svi!2s",
+    smart:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.636733230685!2d105.74488337508064!3d21.00707768063529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134537750892015%3A0x62c0792040b2e3f5!2sVinhomes%20Smart%20City!5e0!3m2!1sen!2s!4v1722756000000!5m2!1sen!2s",
   };
 
   return (
@@ -64,11 +68,11 @@ export default function ContactPage() {
                   <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                     HOTLINE HỖ TRỢ 24/7
                   </span>
-                  <a href="tel:0911976839" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-green transition-colors">
-                    0911 976 839
-                  </a>
                   <a href="tel:0938129969" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-green transition-colors">
                     0938 129 969
+                  </a>
+                  <a href="tel:0911976839" className="block text-sm sm:text-base font-black text-slate-800 hover:text-brand-green transition-colors">
+                    0911 976 839
                   </a>
                 </div>
               </div>
@@ -140,24 +144,24 @@ export default function ContactPage() {
             {/* Map Tabs Switcher */}
             <div className="flex items-center space-x-2 shrink-0">
               <button
-                onClick={() => setActiveMap("central")}
+                onClick={() => setActiveMap("ocean")}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
-                  activeMap === "central"
+                  activeMap === "ocean"
                     ? "bg-slate-900 text-white shadow-sm"
                     : "border border-slate-200 bg-white hover:bg-slate-50 text-slate-650"
                 }`}
               >
-                Central Park
+                Vinhomes Ocean Park
               </button>
               <button
-                onClick={() => setActiveMap("grand")}
+                onClick={() => setActiveMap("smart")}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
-                  activeMap === "grand"
+                  activeMap === "smart"
                     ? "bg-slate-900 text-white shadow-sm"
                     : "border border-slate-200 bg-white hover:bg-slate-50 text-slate-650"
                 }`}
               >
-                Grand Park
+                Vinhomes Smart City
               </button>
             </div>
           </div>
@@ -193,14 +197,14 @@ export default function ContactPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full sm:w-auto">
             <a
-              href="tel:0911976839"
+              href="tel:0938129969"
               className="flex items-center justify-center bg-white hover:bg-green-50 text-brand-green font-bold px-6 py-3 rounded-full text-xs sm:text-sm shadow-md transition-colors"
             >
               <Phone className="w-4 h-4 mr-2" />
-              0911 976 839
+              0938 129 969
             </a>
             <a
-              href="https://zalo.me/0911976839"
+              href="https://zalo.me/0938129969"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center border border-white/20 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-full text-xs sm:text-sm transition-all"

@@ -14,13 +14,13 @@ export default function HeroSlider() {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80",
+      image: "/images/IMG_3535.JPG",
       title: "Vệ Sinh Công Nghiệp Cao Cấp",
       description: "Đội ngũ chuyên nghiệp, trang thiết bị hiện đại, làm sạch hiệu quả mọi công trình.",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=1600&q=80",
+      image: "/images/IMG_3541.JPG",
       title: "Làm Sạch Chuyên Sâu Tận Tâm",
       description: "Uy tín tạo niềm tin - Giữ trọn vẻ đẹp như mới cho tổ ấm của bạn.",
     },

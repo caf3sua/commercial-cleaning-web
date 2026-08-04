@@ -417,12 +417,18 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
                   Đội ngũ chuyên nghiệp của Ánh Ngọc luôn sẵn sàng phục vụ 24/7 tại các phân khu Vinhomes.
                 </p>
               </div>
-              <div className="pt-4 relative z-10">
+              <div className="pt-4 relative z-10 flex flex-col gap-2">
                 <a
-                  href="tel:0911976839"
+                  href="tel:0938129969"
                   className="block w-full text-center bg-white text-brand-green hover:bg-slate-50 font-bold py-3 rounded-xl text-xs transition duration-200"
                 >
-                  GỌI NGAY: 0911976839
+                  GỌI NGAY: 0938 129 969
+                </a>
+                <a
+                  href="tel:0911976839"
+                  className="block w-full text-center bg-white/20 text-white hover:bg-white/30 font-bold py-3 rounded-xl text-xs transition duration-200 border border-white/25"
+                >
+                  GỌI NGAY: 0911 976 839
                 </a>
               </div>
             </motion.div>
@@ -434,7 +440,7 @@ export default function NewsPageClient({ initialNews }: NewsPageClientProps) {
 
       {/* Floating Green Hotline Button */}
       <motion.a
-        href="tel:0911976839"
+        href="tel:0938129969"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.6, type: "spring", stiffness: 260, damping: 20 }}

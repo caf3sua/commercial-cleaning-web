@@ -29,7 +29,7 @@ export default function BookingForm({ services, preselectedService = "" }: Booki
     if (!formData.phone.trim()) {
       tempErrors.phone = "Vui lòng nhập số điện thoại";
     } else if (!/^(0[3|5|7|8|9])+([0-9]{8})$/.test(formData.phone.trim())) {
-      tempErrors.phone = "Số điện thoại không hợp lệ (ví dụ: 0911976839)";
+      tempErrors.phone = "Số điện thoại không hợp lệ (ví dụ: 0938129969)";
     }
     if (!formData.service) tempErrors.service = "Vui lòng chọn dịch vụ quan tâm";
 
